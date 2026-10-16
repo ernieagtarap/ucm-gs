@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="God’s Story"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="apple-touch-startup-image" href="icons/splash-1290x2796.png" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-1179x2556.png" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-1284x2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-1170x2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-1668x2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-1640x2360.png" media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-1620x2160.png" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"><link rel="apple-touch-startup-image" href="icons/splash-1536x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"><title>God’s Story</title>
+<meta name="description" content="God’s Story: A Gospel-Sharing Tool — learn to draw the Bridge illustration and share the gospel in nine steps. Union Church of Manila.">
+<meta name="theme-color" content="#f5f5f7">
+<script>try{var t=localStorage.getItem('gs-theme')||'light';if(t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Kalam:wght@400;700&display=swap">
+<style>
+:root{
+  --bg:#f5f5f7;--tile:#fff;--ink:#1d1d1f;--muted:#6e6e73;--sep:rgba(60,60,67,.18);--fill:rgba(118,118,128,.12);
+  --accent:#007aff;--hi:#c25e00;--hibg:rgba(241,128,0,.12);--pen:#1d1d1f;--paper:#fff;--mark:#f18000;
+  --body:-apple-system,BlinkMacSystemFont,"Public Sans","Helvetica Neue",Arial,sans-serif;
+  --hand:"Kalam","Comic Sans MS","Segoe Print",cursive;
+  --spring:cubic-bezier(.2,.9,.3,1.15);--r:22px;color-scheme:light}
+:root.dark{--bg:#000;--tile:#1c1c1e;--ink:#f5f5f7;--muted:#98989d;--sep:rgba(84,84,88,.6);--fill:rgba(118,118,128,.24);
+  --accent:#0a84ff;--hi:#ff9f0a;--hibg:rgba(255,159,10,.14);--pen:#f2f2f7;--paper:#1c1c1e;--mark:#ff9f0a;color-scheme:dark}
+@media (prefers-contrast:more){:root{--accent:#0040dd;--hi:#9a4a00}:root.dark{--accent:#409cff;--hi:#ffb340}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.47 var(--body);-webkit-font-smoothing:antialiased}
+:root.t1 body{zoom:1.12}:root.t2 body{zoom:1.24}
+a{color:var(--accent);text-decoration:none}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:normal}
+p{margin:0}
+[hidden]{display:none!important}
+.skip{position:absolute;left:-999px;top:8px;z-index:200;background:var(--tile);padding:8px 12px;border-radius:10px}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 60%,transparent);outline-offset:2px;border-radius:8px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:.5px solid var(--sep);padding-top:env(safe-area-inset-top,0px)}
+.bar .wrap{height:52px;display:flex;align-items:center;gap:10px}
+.brand{display:inline-flex;align-items:center;gap:8px;font:600 18px/1 var(--body);color:var(--ink);margin-right:auto;white-space:nowrap}
+.bmark{width:26px;height:26px;flex:none}
+.back{display:none;align-items:center;gap:2px;color:var(--accent);font-size:17px;background:none;border:0;padding:6px 4px;cursor:pointer;margin-right:auto}
+.back svg{width:20px;height:20px}
+.btitle{position:absolute;left:50%;transform:translateX(-50%);font:600 17px/1 var(--body);white-space:nowrap;max-width:46vw;overflow:hidden;text-overflow:ellipsis;opacity:0;transition:opacity .2s;pointer-events:none}
+body.in-step .btitle{opacity:1}
+.ibtn{width:36px;height:36px;border-radius:50%;border:0;background:var(--fill);display:grid;place-items:center;cursor:pointer;color:var(--ink);flex:none}
+.ibtn svg{width:19px;height:19px}
+@media (max-width:760px){body.in-step .brand{display:none}body.in-step .back{display:inline-flex}.bar .ibtn.dsk{display:none}}
+
+/* views */
+main{min-height:70vh;padding-bottom:40px}
+.view{display:none}.view.on{display:block;animation:vin .35s ease both}
+@keyframes vin{from{opacity:0;transform:translateY(6px)}}
+@media (prefers-reduced-motion:reduce){.view.on{animation:none}}
+section.s{padding-block:clamp(40px,6vw,72px)}
+.eyebrow{font:600 15px/1.3 var(--body);color:var(--hi)}
+.head{display:grid;gap:8px;margin-bottom:26px;text-align:center;justify-items:center}
+.head h2{font-size:clamp(28px,4vw,40px);line-height:1.1}
+.head p{color:var(--muted);max-width:44ch}
+
+/* hero */
+.hero{text-align:center;padding-top:clamp(28px,5vw,56px)}
+.hlogo{display:block;width:clamp(160px,20vw,210px);height:auto;margin:0 auto 18px}
+.hero h1{font-size:clamp(40px,7vw,72px);line-height:1.04}
+.hero .sub{font-size:clamp(18px,2.2vw,22px);color:var(--muted);max-width:30ch;margin:12px auto 0}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;font:500 17px/1 var(--body);background:var(--accent);color:#fff;border:1px solid var(--accent);cursor:pointer;transition:transform .18s var(--spring),opacity .18s}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:active{transform:scale(.96);opacity:.85}
+.btn svg{width:18px;height:18px}
+.stage{position:relative;max-width:860px;margin:28px auto 0;background:var(--paper);border-radius:28px;padding:clamp(10px,2.4vw,26px);box-shadow:0 1px 2px rgba(0,0,0,.04),0 18px 50px rgba(0,0,0,.08)}
+:root.dark .stage{box-shadow:0 0 0 .5px var(--sep)}
+.stage .replay{position:absolute;right:14px;bottom:14px}
+
+/* the drawing */
+.bridge{display:block;width:100%;height:auto;overflow:visible}
+.bridge .ln{fill:none;stroke:var(--pen);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.bridge .hw{font:400 21px var(--hand);fill:var(--pen)}
+.bridge .big{font-size:44px}.bridge .sm{font-size:18px}
+.bridge .mk{display:none}
+.bridge .mk circle{fill:var(--mark)}.bridge .mk text{fill:#fff;font:700 12.5px var(--body)}
+.bridge .ly{display:none}
+.bridge .ly.vis{display:inline}
+.bridge.marks .ly.new .mk{display:inline}
+.bridge .ly.new .ln{stroke:var(--mark)}.bridge .ly.new .hw{fill:var(--mark)}
+:root.dark .bridge .ly.new .ln{stroke:var(--mark)}
+/* draw-on */
+.bridge .ly.go .ln{stroke-dasharray:var(--len,2000);stroke-dashoffset:var(--len,2000);animation:pen var(--dur,.9s) ease-in-out var(--dl,0s) forwards}
+.bridge .ly.go .hw{opacity:0;animation:ink .6s ease var(--dl,0s) forwards}
+.bridge .ly.go .mk{opacity:0;animation:ink .3s ease calc(var(--dl,0s) + .2s) forwards}
+@keyframes pen{to{stroke-dashoffset:0}}
+@keyframes ink{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.bridge .ly.go .ln,.bridge .ly.go .hw,.bridge .ly.go .mk{animation:none;opacity:1;stroke-dashoffset:0}}
+
+/* intro */
+.intro{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(20px,4vw,56px);align-items:start}
+.intro h3{font-size:22px;line-height:1.25;margin-bottom:8px}
+.intro .lead{font-size:19px;line-height:1.45}
+.why{display:grid;gap:18px}
+.why .n{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start}
+.why .n b{font:700 40px/1 var(--body);color:var(--hi)}
+@media (max-width:760px){.intro{grid-template-columns:1fr}}
+
+/* step list */
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.scard{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;background:var(--tile);border-radius:18px;padding:16px 18px;color:var(--ink);min-height:76px;transition:transform .18s var(--spring),box-shadow .2s}
+.scard:active{transform:scale(.98)}
+@media (hover:hover){.scard:hover{box-shadow:0 8px 24px rgba(0,0,0,.08)}}
+.ball{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:700 16px/1 var(--body);color:#fff;background:radial-gradient(circle at 34% 28%,color-mix(in srgb,var(--c) 60%,#fff),var(--c) 45%,color-mix(in srgb,var(--c) 60%,#000));box-shadow:inset 0 -2px 4px rgba(0,0,0,.2)}
+.scard small{display:block;color:var(--muted);font-size:13px}
+.scard b{font-weight:600;font-size:17px;line-height:1.25}
+.scard .ck{width:22px;height:22px;color:#34c759;opacity:0}
+.scard.done .ck{opacity:1}
+
+/* step page */
+.band{--bc:var(--c);background:linear-gradient(135deg,color-mix(in srgb,var(--bc) 82%,#fff),var(--bc) 42%,color-mix(in srgb,var(--bc) 62%,#000));color:#fff;padding:clamp(34px,5vw,56px) 0 120px;text-align:center}
+:root.dark .band{--bc:color-mix(in srgb,var(--c) 60%,#000)}
+.band .num{width:56px;height:56px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font:700 24px/1 var(--body);color:var(--bc);background:radial-gradient(circle at 34% 28%,#fff,#f4f4f6 45%,#d9d9de);box-shadow:0 6px 18px rgba(0,0,0,.22)}
+.band .eb{font:600 15px/1.3 var(--body);opacity:.9}
+.band h2{font-size:clamp(32px,5vw,52px);line-height:1.08;margin-top:4px;text-shadow:0 1px 12px rgba(0,0,0,.15)}
+.band .cue{max-width:46ch;margin:10px auto 0;opacity:.9;font-size:17px}
+.band .row{display:flex;gap:8px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+.pill{border:0;border-radius:999px;padding:9px 16px;font:500 15px/1 var(--body);background:rgba(255,255,255,.2);color:#fff;cursor:pointer;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.35);display:inline-flex;gap:6px;align-items:center}
+.pill svg{width:16px;height:16px}
+.pill:active{transform:scale(.96)}
+.sbody{margin-top:-96px}
+.sgrid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:20px;align-items:start}
+.sgrid .stage{margin:0;position:sticky;top:72px}
+@media (max-width:900px){.sgrid{grid-template-columns:1fr}.sgrid .stage{position:relative;top:0;order:-1}}
+.seq{display:grid;gap:12px}
+.item{background:var(--tile);border-radius:18px;padding:18px 20px 18px 18px;display:grid;grid-template-columns:30px 1fr;gap:12px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+:root.dark .item{box-shadow:none}
+.item .lt{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font:700 14px/1 var(--body);background:var(--mark);color:#fff}
+.item.say .lt{background:var(--fill);color:var(--ink)}
+.item .kind{display:flex;align-items:center;gap:6px;font:600 13px/1.2 var(--body);color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.item .kind svg{width:15px;height:15px}
+.item.draw{background:color-mix(in srgb,var(--mark) 9%,var(--tile))}
+.item.draw .kind{color:var(--hi)}
+.item p{font-size:17px;line-height:1.5}
+.item p+p{margin-top:8px}
+.item.draw p:not(.kind){font-family:var(--hand);font-size:19px;line-height:1.4}
+.vq{color:var(--hi);font-weight:600}
+.ref{color:var(--hi);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:color-mix(in srgb,var(--hi) 45%,transparent);cursor:pointer;background:none;border:0;padding:0;font:inherit;-webkit-touch-callout:none}
+.item u{text-decoration-thickness:1.5px;text-underline-offset:3px}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.pager a{background:var(--tile);border-radius:18px;padding:16px 18px;color:var(--ink);display:grid;gap:2px}
+.pager a small{color:var(--muted);font-size:13px}
+.pager a b{font-weight:600}
+.pager a.nx{text-align:right}
+.pager a[aria-disabled]{visibility:hidden}
+.practiced{display:flex;justify-content:center;margin-top:22px}
+.donebtn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 20px;border:1px solid var(--accent);background:transparent;color:var(--accent);font:500 16px/1 var(--body);cursor:pointer}
+.donebtn[aria-pressed="true"]{background:#34c759;border-color:#34c759;color:#fff}
+.donebtn svg{width:18px;height:18px}
+
+/* step 8 */
+.qhead{font:700 13px/1.2 var(--body);color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.big-q{font-size:22px;line-height:1.3;font-weight:700}
+.age{font:inherit;width:4.2em;border:0;border-bottom:2px solid var(--hi);background:transparent;color:var(--hi);text-align:center;font-weight:600;padding:0 2px}
+.age:focus{outline:none;background:var(--hibg);border-radius:6px 6px 0 0}
+.prayer{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:10px}
+.prayer li{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:start;font-size:18px;line-height:1.45;font-style:italic}
+.tag{font:600 12px/1 var(--body);font-style:normal;text-transform:uppercase;letter-spacing:.04em;padding:6px 9px;border-radius:999px;background:var(--hibg);color:var(--hi);white-space:nowrap;margin-top:3px}
+.checks{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:8px}
+.checks label{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;cursor:pointer;font-size:17px}
+.checks input{appearance:none;-webkit-appearance:none;width:24px;height:24px;border-radius:50%;border:2px solid var(--sep);margin:1px 0 0;display:grid;place-items:center;cursor:pointer;transition:background .2s,border-color .2s}
+.checks input:checked{background:#34c759;border-color:#34c759}
+.checks input:checked::after{content:"";width:10px;height:6px;border:2.5px solid #fff;border-top:0;border-right:0;transform:translate(0,-1px) rotate(-45deg)}
+.note{color:var(--muted);font-size:15px;font-style:italic}
+
+/* verses */
+.vlist{display:grid;gap:12px;max-width:820px;margin:0 auto}
+.vcard{background:var(--tile);border-radius:18px;padding:18px 20px;display:grid;gap:8px}
+.vcard header{display:flex;align-items:center;gap:10px}
+.vcard h3{font-size:19px;flex:1}
+.vcard .from{font-size:13px;color:var(--muted)}
+.vcard .txt{font-size:18px;line-height:1.5}
+.vcard .txt sup{font-size:11px;color:var(--muted);margin-right:3px}
+.vcard.hide .txt .w{color:transparent;background:var(--fill);border-radius:4px;transition:color .2s,background .2s}
+.vcard.hide .txt .w.show{color:inherit;background:transparent}
+.seg{display:inline-grid;grid-auto-flow:column;grid-auto-columns:1fr;background:var(--fill);border-radius:10px;padding:2px;gap:2px}
+.seg button{border:0;background:transparent;border-radius:8px;padding:7px 14px;font:500 14px/1.1 var(--body);cursor:pointer;color:var(--ink);white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--tile);box-shadow:0 1px 3px rgba(0,0,0,.12),0 0 0 .5px rgba(0,0,0,.04)}
+:root.dark .seg button[aria-pressed="true"]{background:#636366}
+.vtools{display:flex;justify-content:center;margin-bottom:18px}
+
+/* about */
+.about{max-width:760px;margin:0 auto;display:grid;gap:14px;font-size:16px;line-height:1.55}
+.about h3{font-size:20px;margin-top:10px}
+.about ul{margin:0;padding-left:20px;display:grid;gap:6px}
+
+/* sheets */
+.scrim{position:fixed;inset:0;z-index:90;background:rgba(0,0,0,.32);opacity:0;pointer-events:none;transition:opacity .3s}
+.scrim.on{opacity:1;pointer-events:auto}
+.sheet{position:fixed;z-index:100;left:0;right:0;bottom:0;margin:0 auto;max-width:620px;max-height:calc(100dvh - env(safe-area-inset-top,0px) - 24px);overflow:auto;overscroll-behavior:contain;background:var(--bg);border-radius:14px 14px 0 0;padding:8px 20px calc(24px + env(safe-area-inset-bottom,0px));transform:translateY(105%);transition:transform .42s var(--spring);box-shadow:0 -10px 40px rgba(0,0,0,.18)}
+.sheet.on{transform:none}
+@media (min-width:761px){.sheet{bottom:auto;top:50%;border-radius:16px;transform:translateY(-40%) scale(.96);opacity:0;pointer-events:none;transition:transform .35s var(--spring),opacity .25s;max-height:82vh}.sheet.on{transform:translateY(-50%);opacity:1;pointer-events:auto}}
+.grab{width:36px;height:5px;border-radius:3px;background:var(--sep);margin:0 auto 10px}
+.shead{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.shead h3{font-size:22px;flex:1}
+.shead .eyebrow{font-size:13px}
+.x{width:30px;height:30px;border-radius:50%;border:0;background:var(--fill);color:var(--muted);display:grid;place-items:center;cursor:pointer;flex:none}
+.x svg{width:14px;height:14px}
+.rtext{font-size:19px;line-height:1.55}
+.rtext sup{font-size:11px;color:var(--muted);margin-right:3px}
+.rfoot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;font-size:15px}
+.play{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:10px 16px;background:var(--fill);color:var(--ink);font:500 15px/1 var(--body);cursor:pointer}
+.play svg{width:16px;height:16px}
+.play.on{background:var(--accent);color:#fff}
+.group{background:var(--tile);border-radius:12px;overflow:hidden;margin-bottom:22px}
+.glabel{font:400 13px/1.3 var(--body);color:var(--muted);text-transform:uppercase;letter-spacing:.02em;margin:0 16px 6px}
+.cell{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:46px;padding:8px 16px;font-size:17px;width:100%;border:0;background:none;text-align:left;color:var(--ink);cursor:pointer}
+.cell+.cell{border-top:.5px solid var(--sep)}
+.cell .chev{color:var(--muted);width:14px;height:14px}
+.cell.red{color:#ff3b30}
+.cell.blue{color:var(--accent)}
+.sw{appearance:none;-webkit-appearance:none;width:51px;height:31px;border-radius:999px;background:var(--fill);position:relative;cursor:pointer;transition:background .25s;flex:none;margin:0}
+.sw::after{content:"";position:absolute;top:2px;left:2px;width:27px;height:27px;border-radius:50%;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.15),0 1px 1px rgba(0,0,0,.16);transition:transform .25s var(--spring)}
+.sw:checked{background:#34c759}.sw:checked::after{transform:translateX(20px)}
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 28px);transform:translate(-50%,20px);background:rgba(30,30,32,.92);color:#fff;padding:12px 18px;border-radius:14px;font-size:15px;opacity:0;pointer-events:none;transition:opacity .25s,transform .35s var(--spring);z-index:150;max-width:90vw}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* share mode */
+.present{position:fixed;inset:0;z-index:110;background:var(--paper);display:grid;grid-template-rows:auto 1fr auto;opacity:0;pointer-events:none;transition:opacity .3s;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+.present.on{opacity:1;pointer-events:auto}
+.ptop{display:flex;align-items:center;gap:12px;padding:12px 16px}
+.ptop .pt{flex:1;font:600 15px/1.2 var(--body);color:var(--muted)}
+.ptop .pt b{color:var(--ink);display:block;font-size:17px}
+.pcanvas{display:grid;place-items:center;padding:0 12px;min-height:0;cursor:pointer}
+.pcanvas{overflow:hidden;grid-template-rows:100%;grid-template-columns:100%}.pcanvas .bridge{width:100%;height:100%;max-width:1100px;justify-self:center}
+.pbottom{padding:10px 16px 16px;display:grid;gap:12px;justify-items:center}
+.pcue{font-size:clamp(17px,2.4vw,22px);line-height:1.4;text-align:center;max-width:52ch;min-height:2.8em}
+.pcue .ref{font-size:inherit}
+.pctl{display:flex;align-items:center;gap:14px}
+.pctl .ibtn{width:48px;height:48px}
+.pdots{display:flex;gap:6px}
+.pdots i{width:8px;height:8px;border-radius:50%;background:var(--fill);transition:background .2s,transform .2s}
+.pdots i.on{background:var(--accent);transform:scale(1.25)}
+.pdots i.past{background:color-mix(in srgb,var(--accent) 40%,transparent)}
+.pstart{position:absolute;inset:0;display:grid;place-items:center;text-align:center;pointer-events:none}
+.pstart p{font-size:20px;color:var(--muted)}
+.pstart b{display:block;font-size:30px;color:var(--ink);margin-bottom:6px}
+
+/* tab bar (phones) */
+.tabbar{display:none}
+@media (max-width:760px){
+  .tabbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;z-index:60;left:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 8px);width:calc(100% - 24px);padding:5px;border-radius:999px;
+    background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 62%,transparent),color-mix(in srgb,var(--bg) 48%,transparent));
+    -webkit-backdrop-filter:blur(14px) saturate(190%);backdrop-filter:blur(14px) saturate(190%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 0 rgba(0,0,0,.05),inset 0 0 0 .5px rgba(255,255,255,.6),0 0 0 .5px rgba(0,0,0,.08),0 8px 30px rgba(0,0,0,.14);
+    transition:width .5s var(--spring),padding .4s var(--spring)}
+  :root.dark .tabbar{background:linear-gradient(180deg,rgba(60,60,64,.55),rgba(30,30,32,.55));box-shadow:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(0,0,0,.4),inset 0 0 0 .5px rgba(255,255,255,.14),0 0 0 .5px rgba(0,0,0,.6),0 8px 30px rgba(0,0,0,.5)}
+  .tabbar button{position:relative;z-index:1;border:0;background:none;display:grid;justify-items:center;align-content:center;gap:3px;min-height:56px;color:var(--ink);font:600 11px/1 var(--body);border-radius:999px;cursor:pointer;padding:0}
+  .tabbar button svg{width:26px;height:26px}
+  .tabbar button.on{color:var(--accent)}
+  .tabbar button.on svg{stroke-width:2}
+  .tabbar button:active{transform:scale(.9)}
+  .tabpill{position:absolute;z-index:0;top:5px;bottom:5px;left:5px;width:calc((100% - 10px)/5);border-radius:999px;background:color-mix(in srgb,var(--ink) 9%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 4px rgba(0,0,0,.06);transform:translateX(calc(var(--i,0) * 100%));transition:transform .5s var(--spring)}
+  :root.dark .tabpill{background:rgba(255,255,255,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.18)}
+  .tabbar.mini{width:62px;padding:4px;grid-template-columns:1fr}
+  .tabbar.mini button:not(.on),.tabbar.mini .tabpill{display:none}
+  .tabbar.mini button.on{min-height:54px}
+  .tabbar.mini button.on span{display:none}
+  .tabbar.mini button.on svg{width:32px;height:32px}
+  main{padding-bottom:110px}
+  .toast{bottom:calc(env(safe-area-inset-bottom,0px) + 92px)}
+}
+@media (prefers-reduced-transparency:reduce){.tabbar,.bar{background:var(--tile)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}}
+
+/* sidebar (iPad landscape / Mac) */
+.sidebar{display:none}
+@media (min-width:900px){
+  .sidebar{display:flex;flex-direction:column;position:fixed;left:0;top:0;bottom:0;width:264px;z-index:45;background:color-mix(in srgb,var(--bg) 85%,var(--tile));border-right:.5px solid var(--sep);padding:calc(env(safe-area-inset-top,0px) + 18px) 12px 16px;overflow-y:auto}
+  body{padding-left:264px}
+  .bar .brand{visibility:hidden}
+  .sidebar .sbrand{display:flex;align-items:center;gap:8px;font:700 21px/1.2 var(--body);padding:4px 10px 2px}
+  .sidebar .sbrand .bmark{width:30px;height:30px}
+  .sidebar .ssub{font-size:13px;color:var(--muted);padding:2px 10px 14px 48px}
+  .sidebar h6{font:600 12px/1.3 var(--body);color:var(--muted);margin:14px 10px 4px;text-transform:uppercase;letter-spacing:.03em}
+  .sidebar a,.sidebar button{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:10px;width:100%;padding:8px 10px;min-height:36px;border-radius:8px;font:400 15px/1.25 var(--body);color:var(--ink);cursor:pointer}
+  .sidebar a:hover,.sidebar button:hover{background:color-mix(in srgb,var(--ink) 6%,transparent)}
+  .sidebar a.cur{background:color-mix(in srgb,var(--accent) 14%,transparent);font-weight:600}
+  .sidebar a:focus-visible,.sidebar button:focus-visible{outline:2px solid var(--accent)}
+  .sidebar .d{width:20px;height:20px;border-radius:50%;flex:none;background:var(--c);color:#fff;font:700 11px/20px var(--body);text-align:center}
+  .sidebar .ck{margin-left:auto;color:#34c759;display:none;width:16px;height:16px}
+  .sidebar a.done .ck{display:block}
+  .sidebar svg.i{width:18px;height:18px;flex:none}
+  .sidebar .sfoot{margin-top:auto;padding-top:12px;display:grid;gap:2px}
+}
+
+/* UCM logo + opening screen (from the CDL app) */
+/* UCM logo */
+.u0{fill:#af1c2e}.u1{fill:#2b3d6b}.u2{fill:#57585c}.u3{fill:#5f7803}.u4{fill:#f18000}
+:root.dark .u1{fill:#7d93cf}:root.dark .u2{fill:#d1d1d6}:root.dark .u0{fill:#d6394b}:root.dark .u3{fill:#86a313}
+.hlogo{display:block;width:clamp(170px,22vw,230px);height:auto;margin:0 auto 22px}
+@media print{.hlogo{width:2.6in;margin-bottom:.35in}:root .u1{fill:#2b3d6b}:root .u2{fill:#57585c}:root .u0{fill:#af1c2e}:root .u3{fill:#5f7803}.splash{display:none!important}}
+/* mobile opening screen */
+.splash{display:none}:root.sp .splash{position:fixed;inset:0;z-index:2000;background:#fff;display:flex;align-items:center;justify-content:center;transition:opacity .45s ease,visibility .45s}
+:root.dark .splash{background:#1c1c1e}
+.splash .splogo{width:min(62vw,280px);height:auto;animation:spIn .7s cubic-bezier(.2,.9,.3,1.15) both}
+.splash.out{opacity:0;visibility:hidden}
+.splash.out .splogo{transform:scale(1.04);transition:transform .45s ease}
+@keyframes spIn{from{opacity:0;transform:scale(.92)}}
+.splash.anim .splogo{animation:none}
+.splash .ray{transform-box:view-box;transform-origin:297.4px 102.3px;animation:spRay .9s cubic-bezier(.16,1,.3,1) var(--d) both}
+@keyframes spRay{0%{opacity:0;transform:scale(0)}25%{opacity:1}100%{opacity:1;transform:scale(1)}}
+@media (min-width:761px){:root.sp .splash{display:none}}
+@media (prefers-reduced-motion:reduce){.splash .splogo{animation:none}.splash.out .splogo{transform:none}}
+
+
+@media print{.bar,.tabbar,.sidebar,.sheet,.scrim,.present,.toast,.pill,.btn,.replay,.pager,.practiced,.vtools{display:none!important}body{padding:0!important;background:#fff}.view{display:block!important}}
+.pstart .rot{display:none;font-size:15px;margin-top:10px}
+@media (orientation:portrait) and (max-width:760px){.pstart .rot{display:block}}
+/* phone held sideways: drawing fills the screen, controls tuck to the edges */
+@media (orientation:landscape) and (max-height:520px){
+  .present{grid-template-rows:1fr;grid-template-columns:1fr}
+  .ptop{position:absolute;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:2;padding:8px 12px;pointer-events:none}
+  .ptop .x{pointer-events:auto}
+  .ptop .pt{font-size:13px}.ptop .pt b{font-size:15px}
+  .pcanvas{padding:34px 70px 44px}
+  .pbottom{position:absolute;left:0;right:0;bottom:env(safe-area-inset-bottom,0px);padding:4px 12px 8px;gap:4px;pointer-events:none}
+  .pcue{font-size:15px;min-height:0;max-width:70ch;background:color-mix(in srgb,var(--paper) 80%,transparent);border-radius:10px;padding:2px 8px}
+  .pctl{position:fixed;inset:0;justify-content:space-between;padding:0 max(10px,env(safe-area-inset-left,0px));pointer-events:none}
+  .pctl .ibtn{pointer-events:auto}
+  .pdots{position:absolute;top:14px;left:50%;transform:translateX(-50%)}
+}
+
+</style>
+</head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="ucmlogo" viewBox="0 0 595.3 352.1"><path class="u0" d="M232.2,160.9c-2.8-2.7-5-5.5-7.5-8.2.6-.9,1.4-1.3,2.2-1.8,2.9-1.9,5.8-3.8,8.7-5.7,4.2-2.8,8.5-5.5,12.7-8.3,9.4-6.2,18.8-12.3,28.2-18.5,4.3-2.8,8.6-5.6,12.9-8.4.6-.4,1.1-1,2-.9v3.2c-19.1,16.9-39.3,32.3-59.1,48.7Z"/><path class="u4" d="M225.1,50.6c2.2-2.9,4.9-5.1,7.2-7.8.5.3.9.5,1.2.8,7.9,6.6,15.7,13.1,23.6,19.7,5.9,4.9,11.7,9.9,17.6,14.9,4.6,3.8,9.2,7.6,13.7,11.4.3.3.7.6,1,.9.7.5,1,1.3,1,2.2,0,.9,0,1.8-.2,2.6-.2,0-.2.1-.3.1,0,0-.2,0-.2,0-7.2-5-14.4-9.9-21.6-14.9-14.3-9.9-28.6-19.8-43-29.8Z"/><path class="u1" d="M346.7,28.6c2.6,1.6,4.9,3.4,7.1,5.2-.1,1-.8,1.5-1.3,2.1-7.3,9.4-14.5,18.7-21.8,28.1-8.2,10.5-16.5,21.1-24.7,31.6-.7.9-1.3,1.9-2.5,2.3-.6-.7-.5-1.5-.2-2.2.3-.7.8-1.3,1.2-1.9,7.8-12.1,15.7-24.2,23.5-36.3,5.9-9.2,11.8-18.4,17.8-27.6.2-.4.5-.7.9-1.3Z"/><path class="u4" d="M282.6,14.6c4.4-1.3,5-1.4,7.7-1,0,.4.3.9.3,1.4.1,4.9.3,9.8.3,14.7,0,8.2-.1,16.5.2,24.7.5,10.8,0,21.6.3,32.4,0,.4,0,.7,0,1.1-1.7-.3-2.7-1.2-3.1-2.6-.1-.4-.2-.9-.2-1.3-.3-3.2-.6-6.3-.9-9.5-.3-4.2-.6-8.4-1-12.6-.4-4.1-.8-8.1-1.2-12.1,0-.1,0-.3,0-.4-.2-2.9-.4-5.7-.6-8.6,0-1.3-.2-2.6-.3-3.8-.2-2.1-.3-4.2-.5-6.3-.2-1.9-.4-3.7-.6-5.6-.2-1.1-.2-2.2,0-3.4.3-1.6.3-3.1,0-4.7-.1-.7-.1-1.5-.2-2.3Z"/><path class="u3" d="M387.9,109.6c0,2.6-1,5-1.3,7.5-1.1.5-2.1.3-3.1.2-.7,0-1.5-.3-2.2-.3-2.7,0-5.4-.5-8.1-.7-2.9-.2-5.9-.6-8.8-.9-3.4-.3-6.8-.5-10.1-1.1-.4,0-.9-.1-1.3-.2-1.4-.1-2.9-.2-4.3-.4-2-.3-4.1-.3-6.1-.5-3.4-.3-6.9-.8-10.3-1.2-.3,0-.6-.1-.9-.1-3.7-.3-7.4-.6-11-.9-3.5-.3-6.9-.6-10.4-.9-1.4-.1-2.4-.8-3.4-1.6.4-.7,1-.4,1.5-.4,3.1,0,6.2.2,9.3.1,4.8,0,9.5,0,14.3.2,7.5.3,14.9.2,22.4.2,10.1,0,20.2.1,30.4.2,1.2,0,2.4,0,3.6.6Z"/><path class="u3" d="M306.2,128.2c1.4,1.8,2.1,4,3.2,5.9,1.1,2,2,4.1,3,6.1,1,2,2,4.1,3,6.1,1,2,2,4.1,3,6.1,1,2,1.9,3.9,2.9,5.9,1,2,1.9,4.1,2.9,6.1,1,2,2,4.1,3,6.1,1,2,1.9,4.1,2.9,6.1,1,2,2,4.1,3,6.1-.6,1-1.3,1.4-2.4.9-.8-.4-1.6,0-2.3.3-1.5.9-3,1.6-4.6,2.4-.3.2-.7.2-1.1.4-.2-.4-.5-.8-.6-1.2-1-3.2-1.9-6.5-2.9-9.7-1.2-4-2.5-7.9-3.7-11.9-.5-1.7-1-3.3-1.5-5-1.1-3.6-2.1-7.2-3.2-10.8-.7-2.3-1.3-4.6-2-6.9-.6-2-1.1-4.1-1.8-6.1-.8-2.3-.9-4.6-.7-7Z"/><path class="u4" d="M284.2,83.3c-15.8-14.2-31.5-28.3-47.2-42.4-.4-.3-.7-.8-1-1.1,1-1.8,3.1-3.9,5.4-5.5.8.2,1.4.8,1.9,1.4,2.9,3,5.9,6,8.8,9.1,3.6,3.8,7.1,7.6,10.6,11.4,4.9,5.2,9.7,10.5,14.5,15.8,2.1,2.3,4.2,4.5,6.3,6.8.3.3.6.7.9,1,1.3,1.5,1.3,1.6-.3,3.6Z"/><path class="u4" d="M211.3,78.5c1.2-2.8,2.2-5.5,3.6-8.1.7.2,1.3.4,1.8.6,3.9,1.7,7.7,3.4,11.6,5.1,6.5,2.9,13.1,5.8,19.6,8.7,7.4,3.3,14.7,6.5,22.1,9.7,3.2,1.4,6.6,2.6,9.9,3.9.9.4,1.3.8,1,1.2-.4.6-.9.2-1.4,0-2.7-.8-5.3-1.7-8-2.5-1.7-.5-3.4-1.1-5.2-1.6-4.2-1.3-8.5-2.6-12.7-3.9-3-.9-6.1-1.8-9.1-2.7-3.3-1-6.6-2.1-9.9-3.2-5.4-1.7-10.9-3.4-16.3-5.1-1.6-.5-3.3-1-5-1.5-.6-.2-1.1-.4-2-.8Z"/><path class="u1" d="M307.4,97.5c-.3-.8,0-1.2.6-1.3.8-.2,1.6-.3,2.4-.4,4.4-.3,8.9-.6,13.3-.9,2.6-.2,5.3-.3,7.9-.6,4.3-.4,8.6-.8,12.8-1.1,1.4-.1,2.7-.1,4.1-.2,5-.4,9.9-.6,14.9-1.2,2.8-.3,5.6-.4,8.3-.5,3.6-.2,7.2-.3,10.8-.8,1-.1,1.9,0,2.9,0,1,1.8,2,5.2,2.1,7.4-.4,0-.7.1-1.1.1-5.9,0-11.8,0-17.7,0-4.2,0-8.4-.2-12.7-.3-3,0-6,.1-9.1.2-4.2,0-8.4.2-12.7-.3-1.3-.1-2.7,0-4.1,0-5,0-10,0-14.9,0-2.3,0-4.5,0-6.8,0-.4,0-.9,0-1.3,0Z"/><path class="u0" d="M290.8,190.2c-2.7.4-5.1-.4-7.5-.4-.7-.7-.5-1.3-.4-1.9.4-3.9.8-7.8,1.2-11.7.6-5.8,1.1-11.7,1.7-17.5.3-3.2.7-6.4,1-9.7.2-1.9.4-3.8.6-5.6.5-5.2,1.1-10.5,1.6-15.7.3-2.8.5-5.7.8-8.6,0-1,.2-1.9,1.4-2.3.5.1.4.6.4.9,0,3.8.3,7.7,0,11.5,0,.4,0,.9,0,1.4,0,7.7,0,15.4,0,23.1,0,5.6-.2,11.2-.3,16.7,0,2.1,0,4.2,0,6.3,0,4,0,8-.1,12,0,.5-.1,1-.2,1.6Z"/><path class="u0" d="M288.1,116.8c-.4,1.6-1.1,3.1-2.2,4.3-3.6,3.9-7.3,7.8-11,11.7-3.2,3.4-6.4,6.8-9.6,10.2-6.5,6.8-12.9,13.7-19.4,20.5-1.1,1.2-2.2,2.4-3.4,3.6-.5.5-1,.9-1.4,1.3-1.4-.9-5.1-4.6-6.2-6.2,2.3-2.3,5-4.3,7.5-6.5,2.6-2.2,5.1-4.4,7.7-6.6,2.5-2.1,5.1-4.3,7.6-6.4,2.5-2.2,5-4.4,7.5-6.5,2.5-2.2,5-4.4,7.5-6.5,2.6-2.2,5.2-4.4,7.8-6.6,2.5-2.1,5-4.3,7.6-6.4Z"/><path class="u4" d="M290.6,99.9c-.9.3-1.7.2-2.5-.1-10.1-4.5-20.2-9.1-30.3-13.6-6-2.7-12-5.3-18-7.9-6.8-3-13.6-6.1-20.4-9.2-.5-.2-.9-.5-1.5-.8,0-2.2.9-4.1,1.1-6.1.9-.3,1.5.2,2,.5,5,2.6,10,5.3,15,7.9,9.4,4.9,18.8,9.9,28.2,14.8,2,1,4,2.2,6,3.1,2.1,1,4.3,1.8,6.5,2.6,1.7.6,3.2,1.6,4.8,2.5,2.5,1.4,4.9,2.9,7.4,4.4.5.3,1,.7,1.4,1.1.2.2,0,.5.1.8Z"/><path class="u1" d="M380.1,69c.2.6.4.9.4,1.3.3,2.8,1.3,5.4,1.5,8.3-10,2-20,3.4-29.9,5-9.9,1.7-19.7,3.2-29.6,4.9-.2-.6.3-.7.5-.8,2.3-1.2,4.6-2.3,6.9-3.4.5-.2,1-.4,1.5-.5,3.8-.8,7.6-2,11.3-3.2,1.7-.6,3.5-1,5.2-1.6,3.4-1,6.8-2.1,10.1-3.1,3.2-1,6.5-2.1,9.7-3,2.6-.8,5.2-1.5,7.8-2.3,1.4-.4,2.9-.9,4.5-1.5Z"/><path class="u1" d="M378.7,65.4c-.5.7-1.3.9-2.1,1.2-3.5,1.2-7,2.5-10.5,3.6-5.9,1.9-11.8,3.8-17.7,5.6-5.2,1.6-10.3,3.2-15.5,4.8-.7.2-1.4.6-2.3.3,0-1.3.5-2.3,1.8-3,3.9-2,7.9-4.2,11.8-6.3,9.2-4.9,18.3-9.9,27.4-14.9.8-.4,1.5-1,2.4-1,1.4,1.8,4,7.3,4.5,9.6Z"/><path class="u0" d="M216.5,134.9c-1.2-2.3-2.3-4.5-3.3-6.6-.1-.2,0-.6-.1-.9.4-.1.6-.2.9-.3,1-.2,2.1-.3,3.1-.6,4.2-1.4,8.6-2.2,12.9-3.4.7-.2,1.4-.4,2.2-.6,1.2-.3,2.3-.6,3.5-.9,1.9-.5,3.8-1,5.7-1.5,1.9-.5,3.8-1,5.7-1.5,2.8-.7,5.5-1.5,8.3-2.3.7-.2,1.5-.4,2.2-.6,3.9-1,7.9-2,11.8-3.1,2.3-.6,4.6-1.3,7-1.9.8-.2,1.4-.5,1.8-1.2.4-.7,1.1-1,1.9-.9,1.8,0,3.6,0,5.4,0-.2.2-.2.4-.3.4-.4.2-.8.4-1.2.6-22.3,8.4-44.6,16.8-67.2,25.4Z"/><path class="u0" d="M288,120.7c.3.8.1,1.5,0,2.3-.7,6.1-1.3,12.1-1.7,18.2,0,1.3-.3,2.7-.4,4-.2,1.9-.5,3.9-.7,5.8-.2,1.9-.3,3.7-.5,5.6-.6,5.9-1.1,11.9-1.7,17.8,0,.8-.2,1.7-.2,2.5,0,1.3-.3,2.5-1,3.7-.6,1-.6,2.3-.8,3.5-.2,1.1-.3,2.2-.6,3.3,0,.3-.3.7-.5,1-2.2-.5-4.3-.9-6.5-1.8,0-.5,0-1.1.1-1.5,3.5-17.1,7-34.3,10.5-51.4.7-3.4,1.3-6.8,2-10.2.2-.9.3-2,1.2-2.6.2-.1.4-.2.6-.3Z"/><path class="u1" d="M383.6,80.8c.4,2.1.8,3.9,1.2,5.8,0,.3,0,.6,0,1-.5,0-1,.2-1.5.3-4,.3-8,.6-11.9,1-1.1,0-2.3.2-3.4.2-3.2.2-6.3.4-9.5.7-5,.4-10.1.8-15.1,1.2-2.2.2-4.4.2-6.5.5-4.5.5-9,.8-13.5,1-2.8.2-5.5.5-8.3.8-1,0-1.9.2-2.9,0,.7-1.4,1.3-1.9,2.5-2.1,1.8-.3,3.6-.6,5.4-.8,3.5-.5,7-1,10.5-1.5,1.9-.3,3.7-.6,5.6-.9,2.6-.4,5.2-.8,7.8-1.2,1-.1,1.9-.3,2.9-.5,1.1-.2,2.2-.3,3.4-.4,1.6-.2,3.1-.5,4.7-.7,2.7-.4,5.4-.8,8-1.2.3,0,.6,0,.9-.1,4.4-1,8.9-1.3,13.4-2.1,1.3-.2,2.5-.5,3.8-.7.9-.1,1.8-.2,2.9-.3Z"/><path class="u3" d="M382.3,128.7c-1.4,2.9-3.1,5.3-4.6,8-1.3-.5-2.5-1-3.7-1.4-3-1.3-6.1-2.6-9.1-3.9-3.3-1.5-6.6-3-9.9-4.4-2.3-1-4.7-2-7-3-2.8-1.2-5.6-2.5-8.5-3.7-3.5-1.5-7-3.1-10.6-4.6-1-.4-2.1-.9-3.1-1.4-.4-.2-.5-.5-.4-.9.1-.5.4-.8,1-.7.5,0,1,.2,1.5.4,5.6,1.6,11.3,3.3,16.9,4.9,5.8,1.7,11.7,3.5,17.5,5.2,2.7.8,5.5,1.5,8.3,2.3,3.7,1.1,7.5,2.2,11.6,3.4Z"/><path class="u3" d="M310,115.1c.3.4.6.8,1,1.1,3.8,2.7,7.6,5.4,11.5,8.1,3.3,2.3,6.7,4.7,10,7,2.8,2,5.6,4,8.5,6,5.6,3.9,11.2,7.9,16.8,11.8,2.4,1.7,4.8,3.4,7.2,5.1.3.2.6.5.8.7-.5,1.7-2.2,4.7-4,6.9-.3-.1-.7-.2-.9-.5-4.6-4-9.1-8.1-13.7-12.1-3.4-3-6.8-5.9-10.2-8.9-3-2.6-5.9-5.3-8.9-8-4.8-4.2-9.6-8.4-14.4-12.7-1.7-1.5-3.4-3-5-4.6-.4-.4-.7-1-1-1.5.4.2.8.4,1.2.6,0,0,0,0,0,0,.3.6.8,1,1.5,1h0Z"/><path class="u1" d="M302.9,83c0-1.8,0-3.6,0-5.4,0-3.9,0-7.8,0-11.8,0-1.5.3-2.7,1.2-4,3-4.1,3-4.1,4-9.1,1.1-5.2,2.1-10.3,3.1-15.5.7-3.5,1.3-7,1.9-10.4.6-3.3,1.3-6.7,1.9-10,0-.4.3-.8.4-1.3,2.3.2,4.4.6,6.6,1.2,0,.5,0,1-.1,1.4-2.8,9.8-5.7,19.7-8.5,29.5-1.8,6.2-3.7,12.4-5.5,18.6-1.5,5.1-3,10.3-4.5,15.4-.1.5-.3,1-.5,1.4,0,0-.2,0-.2,0Z"/><path class="u3" d="M304.5,117.7c14.2,19.3,28.2,38.3,42.3,57.3-.4.4-.7.7-1,.9-1.6.9-3.2,1.6-5,2.3-.3-.4-.6-.7-.8-1-3.3-5.3-6.6-10.6-10-15.9-5-7.9-9.9-15.8-14.9-23.7-3.2-5-6.4-10-9.6-15-.9-1.4-1.5-2.8-.9-4.8Z"/><path class="u0" d="M270.5,186.4c-2.8-1.1-5.4-2-8-3.3.3-.8.5-1.5.7-2.2,3.6-9.6,7.2-19.2,10.8-28.8,2.9-7.6,5.7-15.2,8.6-22.9.3-.7.6-1.4.9-2.1,0-.1.4-.3.6-.2.2,0,.4.3.4.4,0,.4,0,.8,0,1.1-.8,3.5-1.7,7-2.5,10.6-.8,3.4-1.6,6.8-2.4,10.1-.6,2.5-1.2,5-1.8,7.5-.9,3.7-1.8,7.5-2.6,11.2,0,.1,0,.3,0,.4-1.3,5.6-2.7,11.1-4.1,16.7,0,.4-.3.7-.5,1.4Z"/><path class="u4" d="M279.4,70.5c-4-2.9-6.5-6.6-9.4-10-6.2-7.6-12.4-15.2-18.6-22.7-1.4-1.7-2.8-3.4-4.2-5.1-.5-.6-.9-1.2-1.4-1.9,1.3-1.4,2.9-2.1,4.3-3,1.4-.9,2.8-1.7,4.3-2.6.3.4.6.7.8,1.1,2.6,4.7,5.2,9.5,7.8,14.3,3.8,6.9,7.6,13.9,11.4,20.8,1.4,2.6,2.9,5.3,4.3,7.9.1.3.2.5.5,1.2Z"/><path class="u4" d="M284.6,76.3c-.9-1.7-1.6-3.2-2.4-4.7-4.5-9.1-9.1-18.2-13.6-27.3-2.5-4.9-4.9-9.8-7.4-14.7-.5-1.1-1.2-2.1-1.8-3.1-.6-1.1-.6-1.4.4-2,2.2-1.3,4.4-2.6,6.5-3.9.8.2.9.8,1.1,1.4,1.9,5.8,3.9,11.6,5.8,17.3,2.6,7.8,5.2,15.7,7.8,23.5,1.3,3.9,2.7,7.8,4,11.7.2.6.3,1.2-.5,1.9Z"/><path class="u1" d="M311.3,91.1c.2-.4.2-.6.4-.7,14.1-17.8,28.2-35.6,42.3-53.3.1-.2.3-.3.5-.4,1.6,1,4,3.3,5.2,5-1,1.5-2.3,2.7-3.6,4-3.1,3.3-6.2,6.5-9.4,9.8-3.5,3.7-7.1,7.4-10.7,11.1-5.3,5.5-10.7,11.1-16.1,16.5-2.6,2.6-5.3,5.1-8,7.6-.1.1-.3.2-.7.4Z"/><path class="u3" d="M307,118.8c.1,0,.3,0,.4.1.7.6,1.4,1.2,2,1.9,14.8,15.4,29.6,30.8,44.4,46.2.3.3.5.6.7.9-.4,1.2-1.5,1.7-2.3,2.4-.8.7-1.4,1.5-2.6,2-.6-.6-1.2-1.3-1.8-1.9-5-5.8-9.9-11.6-14.9-17.4-2.6-3.1-5.3-6.2-7.8-9.4-2.6-3.3-4.9-6.7-7.4-10-2.3-3.2-4.7-6.3-7-9.5-1.2-1.6-2.4-3.3-3.6-5,0-.1,0-.3,0-.4Z"/><path class="u1" d="M303.1,93.3c-.3-1.6-.4-4.1-.2-4.8,0,0,0-.2,0-.2,1.2-1.6,1.2-3.7,1.9-5.5.7-1.8,1.2-3.7,1.8-5.6.6-1.9,1.1-3.8,1.7-5.6.6-1.9,1.2-3.7,1.8-5.6,1.9-6.1,3.7-12.3,5.5-18.4,2.7-8.9,5.4-17.9,8.2-26.8.2-.8.6-1.5.8-2.3,1.9-.3,3.6,0,5.3.7,0,.5-.1,1-.3,1.5-1.5,4.1-3,8.2-4.4,12.3-2.2,6-4.4,12-6.6,18.1-1,2.8-2,5.5-3,8.3-2.4,6.6-4.7,13.2-7.1,19.8-.3.8-.8,1.6-1.2,2.4-.7,1-1.4,2-2.1,2.9-.2.3-.3.6-.2,1.1.5-.4,1.1-.9,1.7-1.4.7,1.1.6,2.1,0,3.1-1.1,1.9-2.2,3.7-3.6,6Z"/><path class="u1" d="M369.1,50.4c-.4.3-.6.6-.9.8-11.9,8-23.8,16-35.7,23.9-.2.1-.4.1-.7.2-.5-.6-.3-1.3-.1-1.9.2-.6.4-1.1.8-1.6.5-.6,1.1-1.1,1.6-1.6,8.7-8.6,17.5-17.3,26.2-25.9.4-.4.8-.7,1.1-1,1.5.8,5.7,4.8,7.6,7.1Z"/><path class="u3" d="M304.3,113.1c.3,0,.5,0,.7.2,19.1,16.9,38.1,33.7,57.1,50.6-1.1,1.7-2.6,3.1-4.5,4.3-1.1-.7-2-1.8-2.9-2.7-3.2-3.3-6.4-6.6-9.6-9.9-1.5-1.5-2.9-3-4.4-4.5-3.6-3.7-7.2-7.3-10.8-11-2.2-2.3-4.5-4.5-6.7-6.8-.8-.9-1.5-1.9-2-3-.6-1.3-1.5-2.2-2.5-3.1-4.4-3.9-8.8-7.8-13.3-11.7-.2-.2-.5-.4-.7-.6-.5-.5-.6-1.2-.4-1.9Z"/><path class="u1" d="M308,84.1c.2-.4.6-.7.7-1.1.6-2.4,1.8-4.6,3-6.8,8.3-15.6,16.7-31.2,25-46.9.9-1.7,1.8-3.3,2.6-5,1.5.4,3.8,2,5.5,3.7-.2.4-.5.9-.8,1.3-3.3,5.1-6.5,10.2-9.8,15.2-3.8,6-7.7,11.9-11.5,17.8-4.3,6.7-8.5,13.3-12.8,20-.3.5-.7,1-1.1,1.4-.2.2-.5.2-.8.2h0Z"/><path class="u1" d="M303,58.9c-.1-.7-.2-1-.2-1.2,0-4.3,0-8.6,0-12.9,0-2.9.3-5.9.3-8.8,0-6.6-.1-13.3-.2-19.9,0-.8-.2-1.7.3-2.4,2-.3,6.1-.2,7.9.2.4.9.2,1.9,0,2.8-.4,3.4-.9,6.7-1.3,10.1-.5,3.8-1.1,7.6-1.6,11.4-.6,4.3-1.1,8.5-1.6,12.8-.2,1.3-.3,2.7-.6,4,0,.5-.3,1-.7,1.4-.7.8-1.5,1.5-2.5,2.6Z"/><path class="u0" d="M270.7,108.6c-1.5.2-2.6.3-3.7.4-6.2.7-12.4,1.4-18.7,2.1-3.7.4-7.3.9-11,1.3-1.5.2-3,.2-4.5.4-3.2.4-6.4.8-9.7,1.2-.8,0-1.7.2-2.5.2-2.3.2-4.6.5-7,.7-1.3.1-2.5.2-3.7.2-.9-2-1.7-5.2-1.6-6.9.2,0,.4-.2.6-.2,20.2.2,40.5-.3,60.7.2.2,0,.4.1,1,.3Z"/><path class="u3" d="M311.7,190.5c-2.2.1-4.1,1.1-6.3.6,0-.5-.2-1-.2-1.5.3-8.1-.4-16.3-.5-24.4,0-4.3-.3-8.6-.4-12.9,0-2.1.2-4.2.2-6.3,0-1.3-.1-2.7-.2-4,0-.5,0-1.1,0-1.6,0-4.1-.2-8.1-.2-12.2,0-.4,0-.8.4-1.2.3,2,.7,4,1,6,.8,6.3,1.5,12.6,2.3,18.8.6,5.5,1.2,11.1,1.8,16.6.5,4.2.9,8.4,1.4,12.6.3,2.4.6,4.8.8,7.2,0,.7,0,1.5,0,2.5Z"/><path class="u4" d="M271.3,100.2c-3.4-.1-6.8-.3-10.2-.4-4.1,0-8.2,0-12.2-.2-1.1,0-2.2-.2-3.4-.3-1.1,0-2.1-.1-3.2-.1-7.7,0-15.4,0-23.1,0-2.8,0-5.6-.3-8.4-.4-1.1,0-2.2,0-3.3-.1-.8-1.7-.9-3.3-.5-6.9.4,0,.8,0,1.2,0,1.2.1,2.4.2,3.6.4,1.9.3,3.9.7,5.8.6.4,0,.7.2,1.1.3.5.1,1,.4,1.5.4,2,0,4,.3,6.1.6.4,0,.9,0,1.4,0,2.6.7,5.2.9,7.8,1.1,3.1.3,6.1,1.2,9.2,1.1,0,0,.2,0,.2,0,2.1.7,4.3.8,6.4,1,.9,0,1.8.2,2.7.3.7,0,1.5.1,2.2.3,1.6.3,3.1.7,4.7.6.4,0,.9.2,1.3.3.8.1,1.6.3,2.4.4,1.4.2,2.8.2,4.2.6.7.2,1.5,0,2.2,0,0,.1,0,.2,0,.3Z"/><path class="u0" d="M213.1,125c-.9-2-1.3-4.1-1.7-6.4.6-.2,1.2-.5,1.8-.5,3.5-.5,7-1,10.5-1.5,3.3-.5,6.6-.9,9.8-1.3,4.3-.6,8.5-1.2,12.7-1.8,1.9-.3,3.9-.6,5.8-.9,2.1-.3,4.2-.5,6.3-.8,3.4-.5,6.8-1.1,10.3-1.6.7-.1,1.5-.1,2.2-.1.2,0,.3.2.6.4-.4.8-1.2.9-1.9,1.1-2.5.6-5,1.1-7.5,1.8-2.8.7-5.7,1.5-8.5,2.2-1.9.5-3.8.8-5.7,1.3-3.7.9-7.4,1.9-11.2,2.8-2,.5-4.1.9-6.2,1.4-5.5,1.3-10.9,2.7-16.4,4-.3,0-.6,0-1,.1Z"/><path class="u4" d="M208.7,87.5c0-.4,0-1,.2-1.4.6-1.2.7-2.4.8-3.7,0-.6.3-1.1.4-1.7,2,.2,50.7,15.1,53.7,16.2-1.9-.3-3.5-.5-5.1-.7-2-.2-4.1-.3-6.1-.6-2-.3-4-.6-6-.9-2.2-.4-4.4-.9-6.6-1.3-3.9-.7-7.9-1.3-11.8-2-3-.5-6.1-1.1-9.1-1.6-1.4-.2-2.8-.7-4.2-.6-.3,0-.6-.1-.9-.2-1.1-.4-2.1-.7-3.3-.7-.7,0-1.3-.2-2-.8Z"/><path class="u4" d="M271.5,18.7c2.9-.8,5.5-1.8,8.1-2.4.7.6.6,1.2.6,1.8-.3,3.1.3,6.2.5,9.2.2,3.2.8,6.4,1.2,9.6,0,.3,0,.6,0,.9,0,2.6.3,5.1.8,7.6,0,.3,0,.6,0,.9,0,3.5.6,6.9.9,10.3.3,2.9.6,5.8,1,8.7,0,.8.3,1.6.3,2.4-1.5-4-2.4-8.1-3.5-12.2-1.2-4-2.1-8.1-3.2-12.2-1.1-4.1-2.2-8.3-3.3-12.4-1.1-4-2.3-8.1-3.3-12.4Z"/><path class="u0" d="M289.1,108.7c-21.7,13.5-43.3,26.9-64.9,40.3-.3-.2-.5-.3-.6-.5-.9-1.2-1.8-2.4-2.7-3.8.6-.4,1-.7,1.5-1,7.9-4.2,15.7-8.3,23.6-12.5,5.1-2.7,10.1-5.3,15.2-8,3.7-2,7.4-4,11.1-6,4.4-2.3,8.8-4.6,13.2-7,.7-.4,1.4-.9,2.1-1.4.4-.3.9-.6,1.6-.2Z"/><path class="u0" d="M247.5,173.2c-.4-.4-.8-.7-1.1-1-1-1.1-2.1-2.2-3-3.2.2-1.1.8-1.6,1.4-2.2,2.4-2.5,4.8-5,7.1-7.6,3.7-4,7.4-8,11-12,4.2-4.5,8.4-9.1,12.6-13.6,1.6-1.8,3.3-3.6,4.9-5.3.3-.4.7-.7,1.4-1.3-.2.6-.2.8-.3,1-11.1,15-22.2,29.9-33.3,44.9-.1.2-.4.2-.6.4Z"/><path class="u4" d="M220.7,58.7c1.1-1.6,2.2-3.1,3.8-4.3,1.5.5,2.6,1.5,3.8,2.3,2.9,1.9,5.7,3.9,8.6,5.8,7.5,5,15,10.1,22.5,15.1,4.2,2.8,8.5,5.7,12.7,8.5,0,.1,0,.2,0,.2,0,0-.1,0-.2,0-16.9-9-33.9-18-50.8-27-.1,0-.2-.2-.4-.6Z"/><path class="u3" d="M342.1,114.5c1.4.2,2.8.4,4.2.6.4,0,.9.1,1.3.1,3.7,0,7.3.8,11,1.1.2,0,.4.1.7.1,3.9,0,7.6,1,11.5,1.1,1.6,0,3.1.3,4.7.5,2.7.3,5.4.6,8.1.9.3,0,.6.1.9.2,0,2.1-.8,4-.9,6,0,.4-.4.8-.6,1.2-1.7-.4-3.2-.9-4.8-1.3-1.7-.4-3.3-.9-5-1.3-3.2-.8-6.4-1.6-9.6-2.4-3.4-.9-6.8-1.9-10.2-2.8-2.3-.6-4.7-1.1-7-1.7-1.6-.4-3.2-.7-4.3-2.3Z"/><path class="u0" d="M276.5,113.5c-.1.3-.2.4-.3.5-18.7,9.4-37.4,18.8-56.1,28.2-1.5-1.4-1.6-1.5-2.5-3.7.3-.2.7-.5,1.1-.7,2.6-1.1,5.3-2.2,7.9-3.3,7.3-3.1,14.6-6.2,21.9-9.3,7.6-3.2,15.1-6.4,22.7-9.6,1.7-.7,3.4-1.5,5.3-2.2Z"/><path class="u0" d="M253.7,177.8c-1.6-1.3-3.3-1.9-4.6-3.3,1-2,19.7-27.9,22.2-30.8.5.2,1,.4,1.4.6.3.9-.2,1.5-.6,2-2.2,3.9-4.4,7.7-6.7,11.5-1.8,3.1-3.7,6.2-5.5,9.4-1.7,2.9-3.4,5.9-5.1,8.8-.3.5-.7,1-1.2,1.7Z"/><path class="u0" d="M260.7,181.4c-1.7-.8-3.2-1.6-4.5-2.7.2-.6.4-1.1.7-1.6,2-3.8,4-7.6,6-11.4,2.3-4.5,4.7-9,7-13.4,1.2-2.2,2.3-4.4,3.5-6.6.5-.9.8-1.8.3-2.8-.4-.8-.3-1.4.2-2.1,1.7-2.3,3.3-4.7,4.9-7,.2-.2.4-.5.9-1-.2.7-.2,1.1-.3,1.4-2.4,6.2-4.9,12.3-7.3,18.5-1.6,4.2-3.3,8.4-4.9,12.7-1.2,3.2-2.5,6.3-3.7,9.5-.6,1.5-1.1,3-1.7,4.4-.3.7-.6,1.4-1,2.3Z"/><path class="u1" d="M313.2,70.3c.2-.7.4-1.4.7-2.1,6.3-15.1,12.6-30.2,18.9-45.3.3-.8.7-1.6,1.1-2.5,1.7.2,3.1,1,4.4,2-.2.5-.3,1-.6,1.5-4.9,9.4-9.9,18.8-14.8,28.2-2.1,4.1-4.2,8.2-6.3,12.3-1,1.9-2,3.7-3,5.6,0,.2-.3.3-.5.4,0,0,0,0,0,0Z"/><path class="u3" d="M309.4,131.8c.6,0,.9.5,1.1,1,1,1.7,2.1,3.5,3.2,5.2,7.9,13,15.8,26.1,23.6,39.1.4.6.7,1.3,1.2,2-1.7.6-3.1,1.5-5,1.1-1.3-2.6-2.6-5.2-3.9-7.9-1.3-2.7-2.7-5.4-4-8.1-1.7-3.4-3.3-6.8-5-10.1-3.4-7-6.8-14-10.2-20.9-.3-.5-.7-1-1-1.4h0Z"/><path class="u1" d="M335.5,74.9c.3-.8,1-1.1,1.6-1.5,3.5-2.4,7-4.7,10.5-7,6.6-4.4,13.3-8.9,19.9-13.3.6-.4,1.1-.7,1.7-1.1,1.1,1.2,1.5,2.6,2.2,4.1-.5.3-.9.6-1.3.9-4.1,2.2-8.3,4.3-12.4,6.5-6.6,3.5-13.2,7-19.8,10.5-.8.4-1.6.7-2.5,1h0Z"/><path class="u3" d="M308,146.3c.2.3.5.5.6.9.5,1.7,1,3.3,1.4,5,1.2,4.3,2.4,8.6,3.6,12.9,1.8,6.2,3.5,12.5,5.3,18.7.4,1.3.6,2.6,1,4-1.2.5-2.3.8-3.6.7-.6-1.4-.8-2.9-1-4.4-.3-1.9-.7-3.7-1-5.6-1.1-5.6-2.1-11.3-3.2-16.9-.9-4.9-1.9-9.8-2.8-14.7,0-.2-.2-.4-.2-.6h0Z"/><path class="u1" d="M330.4,74.5c-.3,1.7-.5,3.1-.8,4.4-.2,1.3-.5,2.7-.7,4-1.5,1-7.9,3.9-12,5.3-.3-.5.1-.7.3-.9,1.8-1.8,3.6-3.6,5.5-5.4,1.8-1.8,3.6-3.6,5.4-5.5.6-.6,1.1-1.2,2.3-1.9Z"/><path class="u3" d="M308,146.3v-1.2s0,0,.1,0c0,.4,0,.8-.1,1.2,0,0,0,0,0,0Z"/><path class="u3" d="M309.4,131.8c0,0,0-.2,0-.3,0,0,0,0,0,.1,0,0,0,.1,0,.2,0,0,0,0,0,0Z"/><path class="u1" d="M308,84v.5c0-.1,0-.3,0-.4,0,0,0,0,0,0Z"/><path class="u1" d="M335.5,74.9c0,0-.2.2-.3.3.1,0,.2-.1.3-.2,0,0,0,0,0,0Z"/><path class="u1" d="M312.4,72.3c0,0,0,.1-.1.2,0,0,.1,0,.2-.1h0Z"/><path class="u1" d="M312.4,72.3c0-.4.1-.7.5-.9,0,0,0,0,0,0-.2.3-.3.6-.5.9,0,0,0,0,0,0Z"/><path class="u1" d="M313.1,70.2c0,.4-.2.8-.3,1.2,0,0,0,0,0,0-.1-.4-.1-.9.3-1.2,0,0,0,0,0,0Z"/><g><path class="u2" d="M350.2,286.8c0,.3-.1.7-.3.8-.4.2-.9.2-1.3.2-4.8,0-9.5,0-14.3,0-.4,0-.8,0-1.1-.1-.5-.1-.5-.5-.2-.9.7-.2,1.5-.4,2.3-.6,1.4-.4,2.2-1.2,2.6-2.6.2-.7.3-1.3.3-2,0-.9,0-1.8,0-2.7,0-10,0-20.1,0-30.1,0-1.1,0-2.1-.2-3.2-.3-1.7-1.3-2.8-3.1-3.2-.6-.1-1.2-.3-1.8-.5-.4-.2-.5-.5-.2-1,.3,0,.7-.1,1-.1,4.9,0,9.8,0,14.7,0,.4,0,.8,0,1.1.1.2,0,.3.4.5.8-.8.2-1.4.4-2.1.6-2.3.6-3.1,1.5-3.5,3.8-.1.7-.2,1.5-.2,2.3,0,3.6,0,7.2,0,10.9,0,.5.1,1,.2,1.7.5,0,.9.2,1.3.2,6.7,0,13.4,0,20.2,0,.4,0,.9-.1,1.5-.2,0-.7.2-1.4.2-2,0-3.5,0-7.1,0-10.6,0-.9-.1-1.8-.3-2.7-.3-1.7-1.3-2.8-3-3.2-.7-.1-1.3-.3-2-.5-.4-.2-.4-.6,0-1,.5,0,1,0,1.5,0,4.6,0,9.2,0,13.8,0,.5,0,.9,0,1.4,0,.2,0,.5.3.4.4,0,.2-.2.6-.4.7-.6.2-1.3.3-2,.5-1.3.4-2.3,1.2-2.6,2.5-.2,1-.4,2.1-.4,3.1,0,5.2,0,10.4,0,15.6,0,5.6,0,11.2,0,16.8,0,1,.2,2.1.4,3.1.3,1.3,1.1,2.1,2.4,2.5.9.2,1.7.4,2.7.7-.1.3-.2.7-.3.8-.3.2-.7.2-1.1.2-4.9,0-9.8,0-14.7,0-.4,0-.7,0-1.1-.2-.1,0-.1-.4-.2-.7.3-.1.6-.2.8-.3.6-.1,1.2-.2,1.8-.4,1.6-.4,2.4-1.5,2.7-3,.2-1,.3-2.1.3-3.1,0-4.9,0-9.8,0-14.7,0-.7-.1-1.3-.2-2.1-.6,0-1.1-.2-1.6-.2-6.6,0-13.1,0-19.7,0-.4,0-.9,0-1.5.2-.1.5-.3,1-.3,1.5,0,5.2,0,10.4,0,15.6,0,.2,0,.3,0,.5.3,3.6,1.3,4.9,4.9,5.8.2,0,.4.2.7.3Z"/><path class="u2" d="M549.4,260.9c.5,0,.9.2,1.2.2,7.2,0,14.3,0,21.6,0,.1-.6.3-1.1.3-1.6,0-4.1,0-8.2,0-12.2,0-.5,0-.9-.1-1.4-.3-2-1.3-3.3-3.4-3.7-.5,0-1-.2-1.5-.4-.4-.2-.4-.6-.1-1,.5,0,1-.1,1.5-.1,4.6,0,9.2,0,13.8,0,.5,0,1.1,0,1.6.2.2,0,.2.4.4.8-.9.2-1.6.4-2.3.6-1.9.4-2.9,1.5-3.2,3.4-.1,1-.2,2-.2,2.9,0,10.4,0,20.8,0,31.2,0,1.1.1,2.1.3,3.2.2,1.6,1.2,2.7,2.8,3.1.8.2,1.6.4,2.3.5.2.5.1.8-.3.9-.4,0-.9,0-1.4,0-4.6,0-9.2,0-13.8,0-.5,0-1-.1-1.6-.2,0,0-.2-.2-.2-.4,0-.1,0-.3.1-.4.3-.1.5-.2.8-.3,2.5-.4,4.2-1,4.4-5.2,0-2,0-3.9,0-5.9,0-3.2,0-6.5,0-9.7,0-.7,0-1.5,0-2.3-.5-.1-1-.3-1.4-.3-6.7,0-13.4,0-20.2,0-.5,0-1,.2-1.6.3,0,.8-.1,1.4-.1,2.1,0,4.8,0,9.5,0,14.3,0,1,.1,2,.3,2.9.4,1.8,1.5,3.1,3.4,3.6.6.2,1.1.4,1.8.6-.1.3-.2.7-.4.8-.5.1-1,.2-1.6.2-4.5,0-9.1,0-13.6,0-.5,0-1.1,0-1.5-.2-.2,0-.2-.5-.4-.8.9-.2,1.7-.4,2.5-.6,1.6-.4,2.5-1.4,2.8-3,.2-1.3.4-2.5.4-3.8,0-10,0-20.1,0-30.1,0-1.1-.1-2.1-.2-3.2-.2-2.1-1.3-3.5-3.5-3.8-.5,0-1-.2-1.5-.4-.2,0-.3-.3-.3-.5,0-.2.2-.4.4-.5.3-.1.6,0,.9,0,5,0,10,0,15,0,.3,0,.6,0,.8.1.2.4.3.8-.1,1-.6.2-1.2.3-1.7.5-1.6.4-2.7,1.3-3,3-.2.8-.3,1.6-.3,2.5,0,4,0,8,0,12,0,.3,0,.6.1,1.1Z"/><path class="u2" d="M464.6,264.5c.4.7.7,1.3,1,1.8,2.5,3.9,5,7.9,7.6,11.8,1.1,1.6,2.3,3.2,3.6,4.6,1.5,1.7,3.3,3.1,5.5,3.8.5.1.8.4.6,1.1-.2,0-.6.2-.9.2-2.4,0-4.8,0-7.2,0-1.6,0-2.8-.6-3.8-1.8-.6-.7-1.1-1.4-1.6-2.2-4.3-6.6-8.5-13.2-12.8-19.8-.4-.7-.8-1.4-1.4-1.8-.6.2-.6.6-.6,1,0,1.7,0,3.5,0,5.2,0,3.6,0,7.2,0,10.9,0,.9.1,1.8.2,2.7.3,2.2,1.6,3.7,3.8,4.3.6.2,1.1.3,1.8.5-.2.3-.2.7-.4.8-.4.1-.9.2-1.3.2-4.8,0-9.5,0-14.3,0-.4,0-.9,0-1.5-.2.2-.4.2-.9.4-1,.6-.2,1.3-.3,2-.5,1.5-.4,2.4-1.3,2.7-2.7.2-.7.3-1.5.3-2.2,0-1.1,0-2.3,0-3.4,0-9.4,0-18.9,0-28.3,0-1.3-.1-2.6-.3-3.8-.2-1.9-1.3-3-3.2-3.3-.5-.1-1-.2-1.5-.4-.2,0-.5-.5-.4-.7,0-.2.4-.4.6-.5.4,0,.9,0,1.4,0,7.1,0,14.2,0,21.3,0,1.8,0,3.6.2,5.3.8,3,1,4.5,3.1,4.7,6.3.2,3-.6,5.8-2.3,8.3-1.6,2.5-3.8,4.5-6.3,6.1-1,.7-2,1.3-3.2,2.1ZM454.6,251.8h0c0,2.3,0,4.5,0,6.8,0,.6.2,1.2.7,1.6,1.7,1.2,3.6,2.3,5.7,2.7,4,.7,6.9-1,7.9-5.2.5-2.4.5-4.8,0-7.2-.2-1.2-.6-2.4-1.1-3.4-1.1-2.4-2.9-4.2-5.6-4.9-2.3-.6-4.3,0-6.3,1-1,.5-1.4,1.2-1.4,2.3,0,2.1,0,4.2,0,6.3Z"/><path class="u2" d="M245.2,276.8c0-1,.1-1.6.1-2.2,0-4.2,0-8.5,0-12.7-.1-3.9-.4-7.8-1.3-11.7-.3-1.3-.7-2.6-1.1-3.9-.7-1.8-1.7-3.3-3.6-4.2-.5-.2-.8-.7-.5-1.3,1.7-.3,12.6-.3,15.1,0,.4.4.3.8,0,1.1-.2.1-.4.2-.6.3-1.5.7-2.4,1.8-3,3.2-.5,1.2-1,2.5-1.4,3.8-1.1,4.5-1.4,9.1-1.4,13.7,0,7.8,0,15.7,0,23.5,0,.8,0,1.6,0,2.4-.7.5-1.2.5-1.7,0-.4-.5-.7-1-1.1-1.4-9.7-13.1-19.4-26.2-29.2-39.3-.4-.6-.7-1.4-1.6-1.6-.1.3-.3.5-.3.8,0,.7,0,1.4,0,2,0,3.5,0,7.1,0,10.6,0,4,.1,8,.5,12,.2,2.6.5,5.3,1.3,7.8.2.7.4,1.4.7,2.1.7,1.9,1.8,3.5,3.8,4.3.5.2.7.5.4,1.2-.3,0-.6.1-.9.2-5.1.2-12.3,0-14.1-.3,0-.3,0-.6,0-.8,0-.2.3-.3.5-.4,1.8-.9,2.7-2.6,3.4-4.3,1-2.6,1.6-5.4,1.8-8.1.3-2.9.5-5.9.5-8.8.1-5.3.2-10.6.2-15.8,0-1.1,0-2.3-.2-3.4-.2-1.9-1.3-3-3.1-3.4-.7-.2-1.4-.4-2.3-.6.2-.4.2-.6.4-.8,0,0,.3-.1.4-.1,3.6,0,7.2,0,10.9,0,.6.8,1.2,1.5,1.8,2.3,7.8,10.4,15.5,20.8,23.3,31.2.5.6.9,1.2,1.4,1.8.2.2.4.3,1,.7Z"/><path class="u2" d="M73.2,246.6c0,.7-.2,1.2-.2,1.7,0,5.9,0,11.8.1,17.7,0,4,.3,8,1.1,11.9.3,1.3.6,2.6,1.1,3.9.7,2,1.8,3.7,3.8,4.6.5.2.7.5.4,1.2-.2,0-.5.2-.7.2-3.7.2-12.6,0-14.3-.2,0-.3,0-.6,0-.8,0-.2.3-.3.5-.4,1.8-.9,2.7-2.5,3.4-4.3,1-2.5,1.5-5.1,1.8-7.7.6-4.7.7-9.5.7-14.2,0-3.8,0-7.7,0-11.5,0-1,0-2-.2-2.9-.2-1.7-1.2-2.7-2.9-3.1-.7-.2-1.3-.3-2-.5-.5-.1-.5-.5-.3-.9,1.6-.3,8.5-.4,11.6-.1.4.5.9,1.1,1.3,1.7,8,10.7,16,21.4,24,32.1.5.7.9,1.6,1.7,1.9.5-.2.5-.5.5-.8,0-6.9.3-13.7-.5-20.6-.3-2.4-.8-4.7-1.3-7.1-.2-.9-.6-1.9-1-2.7-.6-1.3-1.5-2.4-2.9-3-.3-.1-.6-.3-.8-.5-.1-.1-.2-.4-.1-.6,0-.2.3-.4.4-.4.3,0,.6,0,.9,0,4.4,0,8.8,0,13.1,0,.3,0,.6,0,.8.1.3.5.3,1-.2,1.2-2.8,1.1-3.8,3.5-4.6,6.1-.7,2.4-1.1,4.8-1.3,7.3-.4,4.1-.4,8.1-.4,12.2,0,6.3,0,12.7,0,19,0,.8,0,1.6,0,2.4-.8.5-1.3.4-1.7-.2-.5-.7-1-1.3-1.5-2-9.6-12.9-19.2-25.8-28.7-38.7-.4-.6-.7-1.3-1.9-1.7Z"/><path class="u2" d="M173.9,239.8c2.2-.1,4.6.3,7,.9,7.6,2.1,14,9.8,15,17.1,1,6.7-.3,12.7-4,18.3-3.5,5.2-8,9.2-14.1,11.2-5.4,1.8-10.8,2.1-16.2.3-6.8-2.2-14.1-9.2-14.7-18.9-.9-12.8,7.7-24.9,20.1-28.3,2.2-.6,4.4-.8,6.9-.7ZM152.5,262c.2,1.3.3,3.4.7,5.5,1.7,7.9,6.4,13.5,13.6,17,3.3,1.6,6.8,2.1,10.4,1.4,5.7-1.1,9.6-4.6,11.9-9.8,1-2.2,1.3-4.5,1.4-6.8.1-4.8-.9-9.4-3-13.8-2.8-5.9-7.4-9.8-13.6-11.9-3-1-6.1-1.1-9.1-.4-5.5,1.3-9.1,4.8-11.1,10-1,2.6-1.2,5.3-1.2,8.8Z"/><path class="u2" d="M27.4,240.9c.2.5.2.9-.2,1-.6.2-1.3.3-2,.5-1.4.4-2.4,1.3-2.7,2.7-.1.5-.2,1-.3,1.6,0,.7,0,1.4,0,2,0,8.4,0,16.7,0,25.1,0,1.7,0,3.3.5,4.9.5,1.7,1.3,3.2,2.6,4.4,2.4,2.3,5.2,3.6,8.5,3.8,2.3.1,4.5.1,6.7-.4,4.8-1.2,7.7-4.2,8.6-9.1.3-1.9.5-3.9.6-5.8,0-5.6,0-11.2-.6-16.7-.2-2-.6-4-1-6-.1-.7-.4-1.4-.7-2.2-.7-2-1.8-3.7-3.9-4.5-.5-.2-.9-.6-.5-1.2,2-.3,13.5-.3,15.3,0,.3.5.2,1-.2,1.2-2.8,1.3-3.8,3.8-4.6,6.4-.7,2.3-1.1,4.7-1.3,7.1-.3,3.2-.4,6.5-.5,9.7,0,2.6,0,5.3-.1,7.9,0,1.5-.2,3-.4,4.5-.6,3.1-2.1,5.6-4.7,7.5-2.4,1.7-5,2.8-7.9,3.2-3.9.6-7.8.5-11.7-.4-2.3-.5-4.4-1.5-6.3-2.9-2.7-2.1-4.3-4.8-4.6-8.2-.1-1-.1-2-.1-2.9,0-7.5,0-15.1,0-22.6,0-1.6,0-3.2-.2-4.7-.2-2.8-1-3.7-3.7-4.4-.4-.1-.9-.2-1.3-.4-.1,0-.2-.2-.5-.3.1-.2.2-.6.4-.7.4-.1.9-.2,1.3-.2,4.8,0,9.5,0,14.3,0,.4,0,.9,0,1.3.1Z"/><path class="u2" d="M435.8,240.9c.3.5.2,1-.3,1.3-.6.4-1.2.7-1.7,1.1-.9.8-1.5,1.9-2,3-.9,1.9-1.4,4-1.7,6.1-.6,3.7-.8,7.5-.9,11.3,0,3.1,0,6.2,0,9.3,0,1.5-.1,3-.4,4.5-.6,3.5-2.4,6.3-5.4,8.3-2.4,1.6-5.1,2.5-8,2.8-3.6.4-7.2.3-10.8-.5-1.8-.4-3.5-1.1-5-2-3.6-2.2-5.7-5.3-6.1-9.5,0-.9,0-1.8,0-2.7,0-7.8,0-15.7,0-23.5,0-1.4-.1-2.9-.2-4.3-.2-2.2-1.3-3.4-3.3-3.7-.6-.1-1.2-.3-1.7-.5-.1,0-.3-.4-.3-.5,0-.2.2-.4.4-.5.3,0,.6,0,.9,0,5,0,10,0,14.9,0,.3,0,.6,0,.8,0,.4.5.3.9-.3,1.1-.6.2-1.2.3-1.8.4-1.6.4-2.5,1.3-2.9,2.9-.2.7-.3,1.3-.3,2,0,9.5,0,19,0,28.5,0,5.8,3.8,9.2,8.3,10.6,3.9,1.2,7.9,1,11.8-.4,3.2-1.2,5.4-3.6,6.4-6.9.5-1.8.9-3.7.9-5.6.2-6.3.1-12.7-.5-19-.2-2.2-.8-4.5-1.2-6.7-.2-.9-.6-1.7-1-2.5-.7-1.3-1.6-2.4-3-3-.3-.1-.7-.4-.9-.7,0-.1,0-.6.2-.7.1-.1.4-.1.6-.1,4.7,0,9.4,0,14,0,.1,0,.3,0,.4.1Z"/><path class="u2" d="M529.3,277.6c0,.5,0,.8,0,1.1,0,.2-.2.4-.4.6-4.8,4-9.8,7.5-16,9-5.5,1.3-10.6.5-15.4-2.6-5.3-3.5-8.5-8.4-9.4-14.8-.8-5.8-.2-11.3,2.5-16.5,3.6-7,9.1-11.7,16.8-13.8,1.7-.5,3.5-.7,5.4-.8,4.5-.1,8.9.2,13.2,1.4.5.1,1,.3,1.5.5.2,0,.4.2.5.3.4,1.7.4,8,0,10.4-.5.5-1.1.4-1.8.1-.1-.4-.3-.9-.5-1.4-.7-3-2.4-5.3-5-7-3.7-2.4-7.8-3.1-12.2-2.5-5.7.7-9.7,3.9-12.3,8.9-2.3,4.3-2.9,8.8-2.6,13.6.2,3.6,1,7,2.8,10.2,2.2,3.9,5.2,7,9.5,8.6,4.3,1.6,8.6,1.5,12.9.2,3.1-.9,5.8-2.4,8.5-4.3.5-.4,1.1-.7,1.9-1.2Z"/><path class="u2" d="M323.6,242c0,3.6,0,7,0,10.3-.7.6-1.2.5-1.9.2-.1-.5-.3-1.1-.5-1.6-.8-3.2-2.7-5.5-5.5-7.1-3.6-2.1-7.5-2.7-11.6-2.1-6,.8-10,4.2-12.6,9.5-1.5,3.1-2.3,6.4-2.4,9.8,0,3.4.2,6.8,1.4,10,1.3,3.7,3.4,6.9,6.5,9.3,3.7,2.9,7.9,3.9,12.5,3.6,4.8-.3,9-2.3,13-4.9.7-.5,1.3-.9,2-1.3.5.4.4.8.2,1.1-.2.3-.5.6-.8.8-3.6,2.9-7.3,5.6-11.6,7.4-2,.8-4,1.4-6.1,1.7-6.4.9-11.7-1.2-16.4-5.4-3.6-3.3-5.6-7.5-6.3-12.3-.5-3.9-.5-7.8.6-11.7,1.5-5.7,4.7-10.2,9.2-13.9,4.6-3.7,9.8-5.5,15.7-5.6,4.2,0,8.3.3,12.3,1.4.7.2,1.4.5,2.3.8Z"/><path class="u2" d="M120.5,240.8c.9,0,1.4-.1,1.9-.1,4.6,0,9.2,0,13.8,0,.4,0,.8,0,1.1,0,.2,0,.6.3.6.5,0,.2-.2.5-.4.6-.6.2-1.2.3-1.8.4-1.9.4-2.9,1.6-3.1,3.4-.1,1-.2,2-.2,2.9,0,10.3,0,20.5,0,30.8,0,.9,0,1.8.2,2.7.3,2,1.5,3.4,3.5,4,.5.1,1,.2,1.5.4.4.2.4.6.2,1-.3,0-.7.1-1.1.1-5.1,0-10.3,0-15.4,0-.2,0-.4-.1-.6-.2,0-.2,0-.5,0-.8.7-.1,1.3-.3,2-.4,1.8-.4,2.9-1.5,3.2-3.3.1-.7.2-1.3.2-2,0-11.2,0-22.3,0-33.5,0-.5,0-.9,0-1.4-.4-2.3-1.2-3.2-3.5-3.8-.5-.1-1-.2-1.5-.4-.2,0-.2-.5-.5-1Z"/><path class="u2" d="M268.4,306.5c1.6-.4,3.1-.2,4.7-.2-1.7,1.5-1.8,1.9-1.6,3.9.4,4.7.9,9.3,1.3,14,0,.3,0,.6.1.9.3,1.4.5,2.9,2.2,3.4h-6.5c1.5-1.5,1.7-1.9,1.5-3.9-.4-4.4-.9-8.9-1.4-13.3,0,0,0-.1-.1-.2-.4-.3-.7,0-.9.3-1.4,2.7-2.8,5.3-4.1,8.1-1.3,2.7-2.4,5.5-3.6,8.3-.2.5-.5.9-.7,1.5-.7-.3-.8-.9-1-1.5-2.1-5.2-4.2-10.4-6.3-15.5-.3-.8-.7-1.7-1.1-2.5-.1-.2-.4-.4-.8-.7-.1.8-.2,1.4-.3,2-.4,3.6-.8,7.2-.8,10.8,0,.6,0,1.2,0,1.8,0,1.8.6,3.4,2.1,4.5-1.7.4-4.5.4-6.5,0,1.8-1.4,2.3-3.3,2.8-5.3,1.2-4.4,1.6-8.9,1.8-13.4,0-1.7,0-1.7-1.3-3.1,1.5,0,2.9-.2,4.4.1.2.5.5,1.1.7,1.6,2,4.8,3.9,9.6,5.9,14.5.3.8.5,1.6,1.2,2.3.3-.5.6-.9.8-1.3,2.2-5.1,4.3-10.3,6.4-15.5.2-.5.5-1.1.7-1.6Z"/><path class="u2" d="M345.2,323.4c.2-.4.3-.5.3-.5.2-3.8.3-7.7-.3-11.5-.3-1.8-.8-3.5-2.4-4.9,1.1-.3,2.1-.2,3-.2,1,0,1.9,0,2.9,0,0,.3.1.5,0,.5-1.4,1.5-2,3.4-2.1,5.4-.2,2.5-.3,5-.4,7.5,0,2.5,0,5,0,7.5,0,.6,0,1.2,0,1.9-.9-.2-1.1-.9-1.5-1.4-4.2-5.6-8.3-11.1-12.4-16.7-.5-.7-.9-1.5-1.9-2.1-.1.3-.4.6-.4.8-.1,4.4-.1,8.8.4,13.1.2,1.9.6,3.9,2.2,5.2,0,.5-.4.5-.7.5-1.7,0-3.5,0-5.2,0-.3-.6.1-.7.4-1,.8-.9,1.2-1.9,1.4-3,.3-1.2.5-2.5.6-3.8.1-3.4.2-6.8.3-10.2,0-.4,0-.8,0-1.1,0-1.2-.3-2.4-2-2.9.5-.1.7-.2.9-.2,4.9,0,3.5-.6,6.3,3.1,3.1,4.1,6.1,8.2,9.2,12.3.4.5.8,1,1.4,1.7Z"/><path class="u2" d="M430.2,305c.4.6.6.9.8,1.3,1.2,3.5,2.4,7,3.6,10.4.9,2.5,1.7,5,2.6,7.5.5,1.5,1.2,2.9,2.6,3.9-1.3.5-2,.5-4.6.2,0-.4,0-.8,0-1.3,0-.4-.2-.9-.4-1.3-.5-1.4-1-2.8-1.5-4.3-.2-.5-.5-1-1.1-1-2.5,0-4.9-.2-7.4.1-.9,1.5-1.2,3.1-1.4,4.6-.2,1.6.2,2.1,1.9,2.9,0,0,.2.2.3.3h-5.9c-.2-.5.3-.6.5-.8,1.2-.9,1.8-2.2,2.3-3.5.9-2.2,1.8-4.5,2.7-6.7,1.4-3.4,2.7-6.9,4.1-10.3.2-.6.5-1.2,1-2.1ZM429.1,310c-1.4,3.4-2.7,6.2-3.5,9.1,0,.1,0,.3.2.5.2,0,.5.2.8.2,1.7,0,3.3,0,5,0,.3,0,.6-.3,1.1-.5-1-2.9-2-5.6-2.9-8.4,0-.2-.2-.4-.6-1Z"/><path class="u2" d="M311.1,328.4c-.4,0-.8,0-1.2,0-1.2,0-2.4,0-3.7,0,.5-1.5-.2-2.7-.6-3.9-.4-1.3-.9-2.5-1.3-3.7-2-.5-6.2-.5-8.3,0-.9,1.4-1.1,3-1.3,4.7-.2,1.4.4,2.1,2.6,3h-6.4c-.1-.6.3-.7.6-.9,1.2-1,1.8-2.4,2.4-3.8,1.3-3.4,2.7-6.7,4-10.1.9-2.2,1.8-4.5,2.7-6.7.2-.5.5-1.1.7-1.6.8,0,.9.7,1,1.1,1.5,4.3,3,8.7,4.5,13,.4,1.1.7,2.1,1.1,3.2,1.1,3.1,1.3,3.5,3.2,5.7ZM296.6,319.6c2.2.5,5.5.4,7.1-.1,0-.3,0-.6-.1-.8-.9-2.6-1.8-5.3-2.8-7.9,0-.2-.2-.4-.4-.6-1,1.4-3.3,7.1-3.8,9.4Z"/><path class="u2" d="M390.3,306.3h5.9c-1.5,1.5-1.6,1.5-1.6,3.5,0,5.4,0,10.9,0,16.3,0,.6,0,1.2.2,1.9,2.1.3,4,.4,5.8-.5,1.9-.9,2.6-2.8,3.4-4.7.4,1.2,0,3.1-.9,6.2-.5-.1-1.1-.3-1.7-.4-.5,0-1.1,0-1.6,0-3.2,0-6.5,0-9.7,0,0,0-.1,0-.2,0,.5-.4,1.2-.8,1.5-1.3.3-.5.4-1.3.4-2,0-5.2,0-10.4,0-15.6,0-1.3-.2-2.4-1.5-3.2Z"/><path class="u2" d="M195.4,306.3h3.9c0,.5,0,.9,0,1.3,0,1.2,0,2.4,0,3.6,0,.6,0,1.2.2,1.8.6,2.5,1.8,3.5,4.4,3.8.6,0,1.2.1,1.7.2,0,.6-.3.6-.6.6-.9,0-1.8,0-2.7,0-.9,0-1.8.2-2.7.3,0,.6-.2,1.1-.2,1.6,0,1.5,0,3,0,4.5,0,2.3.3,2.7,2,4.3h-6.6c1.7-1.3,1.9-1.6,1.9-3.9,0-4.7,0-9.5,0-14.2,0-.2,0-.5,0-.7,0-1.3-.3-2.4-1.4-3.3Z"/><path class="u2" d="M366.3,306.3h5.9c-1.6,1.3-1.8,1.5-1.8,3.4,0,5,0,9.9,0,14.9,0,2,.2,2.2,1.8,3.6,0,0,0,.1,0,.2,0,0-.1,0-.2,0-2,0-4.1,0-6.4,0,.8-.6,1.7-.8,1.8-1.6.2-.8.3-1.6.3-2.4,0-4.7,0-9.5,0-14.2,0-.3,0-.6,0-.9,0-1.2-.4-2.2-1.4-3Z"/><path class="u2" d="M171.7,326.7c.4-.4.9-.8,1.3-1.2,1.2-1.2,1.9-2.7,2.1-4.4.4-3.4-.3-6.6-2.1-9.5-1.6-2.4-3.8-3.8-6.5-4.5-1.1-.3-2.2-.4-3.4,0-.6.1-1.2.2-1.8.3,2.2-1.4,4.5-1.8,7.1-1.5,2.3.3,4.3,1.1,6,2.7,3.1,3,3.9,6.7,2.9,10.7-.6,2.8-2.3,5-4.5,6.9-.3.3-.8.4-1.2.6Z"/><path class="u2" d="M160.3,308.1c-2.4,1.7-3.4,4.1-3.5,6.9,0,1.5,0,3,.5,4.5,1.1,4.3,5,8.1,9.5,8.4,1.3,0,2.5-.2,3.8-.3-2.8,1.6-5.8,1.8-8.7,1-5-1.4-8.1-6.2-7.4-11.5.4-3.5,2.1-6.3,4.8-8.4.3-.3.8-.4,1.2-.6Z"/><path class="u2" d="M208.3,306c.2,1.6.1,3.3,0,5,0,0-.2.2-.4.4-.5-1.2-.6-2.5-1.6-3.4-.9-.9-2.2-1.2-3.7-1.7,2.2-.1,3.9-.2,5.7-.4Z"/><path class="u2" d="M161.4,307.2c-.3.2-.7.5-1,.7.3-.2.7-.5,1-.7Z"/><path class="u2" d="M170.4,327.6c.3-.2.7-.4,1-.7-.3.2-.7.4-1,.7Z"/></g><path class="u3" d="M374.9,137.9c-4.7-2.2-9.5-4.3-14.2-6.5-2.6-1.2-5.2-2.4-7.8-3.5-2.7-1.2-5.5-2.4-8.3-3.7-4-1.8-8.1-3.7-12.1-5.5-3.2-1.5-6.5-2.8-9.7-4.4-1.2-.6-2.5-1-3.8-1.3-1.9-.3-3.7-.6-5.6-.9-.7,0-1.3-.2-1.9.3,0,0,0,0-.1,0h0,0s0,0,0,0c-1,0-1.7-.6-2.4-1-1.3-.8-2.5-1.6-3.8-2.4-.4-.2-.8-.3-1.3-.5-.3,1.4,0,2.3,1.2,2.9.8.5,1.8.8,2.2,1.8,0,.1,0,.2.1.3.4.2.8.4,1.2.6.3.6.7.9,1.4.9,0,0,0,0,0,0,.9,0,1.5.7,2.1,1.1,6.2,4.1,12.4,8.3,18.6,12.4,3.3,2.2,6.5,4.4,9.8,6.6,2.3,1.6,4.6,3.1,6.9,4.6,3,1.9,6,3.8,8.9,5.8,3.5,2.3,6.9,4.6,10.3,6.9.6.4,1.2.9,2.2.9.5-.7,1.2-1.5,1.6-2.3.4-.8,1.5-1.3,1.4-2.5-1.2-.7-2.4-1.4-3.5-2.1-2.5-1.5-5.1-3-7.6-4.5-3.1-1.8-6.2-3.7-9.3-5.5-2.9-1.7-5.8-3.4-8.8-5.1-2.9-1.7-5.8-3.5-8.7-5.3-2.8-1.6-5.6-3.2-8.4-4.8-3.4-2-6.7-4-10.1-6-.4-.2-1-.4-1-1,0,0,0,0,0,0h0c.9-.2,1.5.5,2.2.8,5.7,3.2,11.4,6.4,17.1,9.7,2,1.1,4.1,2.2,6.2,3.3,5.3,2.9,10.5,5.9,15.8,8.9,5.8,3.2,11.6,6.5,17.3,9.7.4.2.8.3,1.2.5,1.1-1.1,1.5-2.5,2.2-3.8.7-1.2,1.6-2.3,1.8-3.9-1.2-.6-2.4-1.1-3.5-1.7Z"/></symbol><symbol id="ucmmark" viewBox="205.5 12 184 181"><path class="u0" d="M232.2,160.9c-2.8-2.7-5-5.5-7.5-8.2.6-.9,1.4-1.3,2.2-1.8,2.9-1.9,5.8-3.8,8.7-5.7,4.2-2.8,8.5-5.5,12.7-8.3,9.4-6.2,18.8-12.3,28.2-18.5,4.3-2.8,8.6-5.6,12.9-8.4.6-.4,1.1-1,2-.9v3.2c-19.1,16.9-39.3,32.3-59.1,48.7Z"/><path class="u4" d="M225.1,50.6c2.2-2.9,4.9-5.1,7.2-7.8.5.3.9.5,1.2.8,7.9,6.6,15.7,13.1,23.6,19.7,5.9,4.9,11.7,9.9,17.6,14.9,4.6,3.8,9.2,7.6,13.7,11.4.3.3.7.6,1,.9.7.5,1,1.3,1,2.2,0,.9,0,1.8-.2,2.6-.2,0-.2.1-.3.1,0,0-.2,0-.2,0-7.2-5-14.4-9.9-21.6-14.9-14.3-9.9-28.6-19.8-43-29.8Z"/><path class="u1" d="M346.7,28.6c2.6,1.6,4.9,3.4,7.1,5.2-.1,1-.8,1.5-1.3,2.1-7.3,9.4-14.5,18.7-21.8,28.1-8.2,10.5-16.5,21.1-24.7,31.6-.7.9-1.3,1.9-2.5,2.3-.6-.7-.5-1.5-.2-2.2.3-.7.8-1.3,1.2-1.9,7.8-12.1,15.7-24.2,23.5-36.3,5.9-9.2,11.8-18.4,17.8-27.6.2-.4.5-.7.9-1.3Z"/><path class="u4" d="M282.6,14.6c4.4-1.3,5-1.4,7.7-1,0,.4.3.9.3,1.4.1,4.9.3,9.8.3,14.7,0,8.2-.1,16.5.2,24.7.5,10.8,0,21.6.3,32.4,0,.4,0,.7,0,1.1-1.7-.3-2.7-1.2-3.1-2.6-.1-.4-.2-.9-.2-1.3-.3-3.2-.6-6.3-.9-9.5-.3-4.2-.6-8.4-1-12.6-.4-4.1-.8-8.1-1.2-12.1,0-.1,0-.3,0-.4-.2-2.9-.4-5.7-.6-8.6,0-1.3-.2-2.6-.3-3.8-.2-2.1-.3-4.2-.5-6.3-.2-1.9-.4-3.7-.6-5.6-.2-1.1-.2-2.2,0-3.4.3-1.6.3-3.1,0-4.7-.1-.7-.1-1.5-.2-2.3Z"/><path class="u3" d="M387.9,109.6c0,2.6-1,5-1.3,7.5-1.1.5-2.1.3-3.1.2-.7,0-1.5-.3-2.2-.3-2.7,0-5.4-.5-8.1-.7-2.9-.2-5.9-.6-8.8-.9-3.4-.3-6.8-.5-10.1-1.1-.4,0-.9-.1-1.3-.2-1.4-.1-2.9-.2-4.3-.4-2-.3-4.1-.3-6.1-.5-3.4-.3-6.9-.8-10.3-1.2-.3,0-.6-.1-.9-.1-3.7-.3-7.4-.6-11-.9-3.5-.3-6.9-.6-10.4-.9-1.4-.1-2.4-.8-3.4-1.6.4-.7,1-.4,1.5-.4,3.1,0,6.2.2,9.3.1,4.8,0,9.5,0,14.3.2,7.5.3,14.9.2,22.4.2,10.1,0,20.2.1,30.4.2,1.2,0,2.4,0,3.6.6Z"/><path class="u3" d="M306.2,128.2c1.4,1.8,2.1,4,3.2,5.9,1.1,2,2,4.1,3,6.1,1,2,2,4.1,3,6.1,1,2,2,4.1,3,6.1,1,2,1.9,3.9,2.9,5.9,1,2,1.9,4.1,2.9,6.1,1,2,2,4.1,3,6.1,1,2,1.9,4.1,2.9,6.1,1,2,2,4.1,3,6.1-.6,1-1.3,1.4-2.4.9-.8-.4-1.6,0-2.3.3-1.5.9-3,1.6-4.6,2.4-.3.2-.7.2-1.1.4-.2-.4-.5-.8-.6-1.2-1-3.2-1.9-6.5-2.9-9.7-1.2-4-2.5-7.9-3.7-11.9-.5-1.7-1-3.3-1.5-5-1.1-3.6-2.1-7.2-3.2-10.8-.7-2.3-1.3-4.6-2-6.9-.6-2-1.1-4.1-1.8-6.1-.8-2.3-.9-4.6-.7-7Z"/><path class="u4" d="M284.2,83.3c-15.8-14.2-31.5-28.3-47.2-42.4-.4-.3-.7-.8-1-1.1,1-1.8,3.1-3.9,5.4-5.5.8.2,1.4.8,1.9,1.4,2.9,3,5.9,6,8.8,9.1,3.6,3.8,7.1,7.6,10.6,11.4,4.9,5.2,9.7,10.5,14.5,15.8,2.1,2.3,4.2,4.5,6.3,6.8.3.3.6.7.9,1,1.3,1.5,1.3,1.6-.3,3.6Z"/><path class="u4" d="M211.3,78.5c1.2-2.8,2.2-5.5,3.6-8.1.7.2,1.3.4,1.8.6,3.9,1.7,7.7,3.4,11.6,5.1,6.5,2.9,13.1,5.8,19.6,8.7,7.4,3.3,14.7,6.5,22.1,9.7,3.2,1.4,6.6,2.6,9.9,3.9.9.4,1.3.8,1,1.2-.4.6-.9.2-1.4,0-2.7-.8-5.3-1.7-8-2.5-1.7-.5-3.4-1.1-5.2-1.6-4.2-1.3-8.5-2.6-12.7-3.9-3-.9-6.1-1.8-9.1-2.7-3.3-1-6.6-2.1-9.9-3.2-5.4-1.7-10.9-3.4-16.3-5.1-1.6-.5-3.3-1-5-1.5-.6-.2-1.1-.4-2-.8Z"/><path class="u1" d="M307.4,97.5c-.3-.8,0-1.2.6-1.3.8-.2,1.6-.3,2.4-.4,4.4-.3,8.9-.6,13.3-.9,2.6-.2,5.3-.3,7.9-.6,4.3-.4,8.6-.8,12.8-1.1,1.4-.1,2.7-.1,4.1-.2,5-.4,9.9-.6,14.9-1.2,2.8-.3,5.6-.4,8.3-.5,3.6-.2,7.2-.3,10.8-.8,1-.1,1.9,0,2.9,0,1,1.8,2,5.2,2.1,7.4-.4,0-.7.1-1.1.1-5.9,0-11.8,0-17.7,0-4.2,0-8.4-.2-12.7-.3-3,0-6,.1-9.1.2-4.2,0-8.4.2-12.7-.3-1.3-.1-2.7,0-4.1,0-5,0-10,0-14.9,0-2.3,0-4.5,0-6.8,0-.4,0-.9,0-1.3,0Z"/><path class="u0" d="M290.8,190.2c-2.7.4-5.1-.4-7.5-.4-.7-.7-.5-1.3-.4-1.9.4-3.9.8-7.8,1.2-11.7.6-5.8,1.1-11.7,1.7-17.5.3-3.2.7-6.4,1-9.7.2-1.9.4-3.8.6-5.6.5-5.2,1.1-10.5,1.6-15.7.3-2.8.5-5.7.8-8.6,0-1,.2-1.9,1.4-2.3.5.1.4.6.4.9,0,3.8.3,7.7,0,11.5,0,.4,0,.9,0,1.4,0,7.7,0,15.4,0,23.1,0,5.6-.2,11.2-.3,16.7,0,2.1,0,4.2,0,6.3,0,4,0,8-.1,12,0,.5-.1,1-.2,1.6Z"/><path class="u0" d="M288.1,116.8c-.4,1.6-1.1,3.1-2.2,4.3-3.6,3.9-7.3,7.8-11,11.7-3.2,3.4-6.4,6.8-9.6,10.2-6.5,6.8-12.9,13.7-19.4,20.5-1.1,1.2-2.2,2.4-3.4,3.6-.5.5-1,.9-1.4,1.3-1.4-.9-5.1-4.6-6.2-6.2,2.3-2.3,5-4.3,7.5-6.5,2.6-2.2,5.1-4.4,7.7-6.6,2.5-2.1,5.1-4.3,7.6-6.4,2.5-2.2,5-4.4,7.5-6.5,2.5-2.2,5-4.4,7.5-6.5,2.6-2.2,5.2-4.4,7.8-6.6,2.5-2.1,5-4.3,7.6-6.4Z"/><path class="u4" d="M290.6,99.9c-.9.3-1.7.2-2.5-.1-10.1-4.5-20.2-9.1-30.3-13.6-6-2.7-12-5.3-18-7.9-6.8-3-13.6-6.1-20.4-9.2-.5-.2-.9-.5-1.5-.8,0-2.2.9-4.1,1.1-6.1.9-.3,1.5.2,2,.5,5,2.6,10,5.3,15,7.9,9.4,4.9,18.8,9.9,28.2,14.8,2,1,4,2.2,6,3.1,2.1,1,4.3,1.8,6.5,2.6,1.7.6,3.2,1.6,4.8,2.5,2.5,1.4,4.9,2.9,7.4,4.4.5.3,1,.7,1.4,1.1.2.2,0,.5.1.8Z"/><path class="u1" d="M380.1,69c.2.6.4.9.4,1.3.3,2.8,1.3,5.4,1.5,8.3-10,2-20,3.4-29.9,5-9.9,1.7-19.7,3.2-29.6,4.9-.2-.6.3-.7.5-.8,2.3-1.2,4.6-2.3,6.9-3.4.5-.2,1-.4,1.5-.5,3.8-.8,7.6-2,11.3-3.2,1.7-.6,3.5-1,5.2-1.6,3.4-1,6.8-2.1,10.1-3.1,3.2-1,6.5-2.1,9.7-3,2.6-.8,5.2-1.5,7.8-2.3,1.4-.4,2.9-.9,4.5-1.5Z"/><path class="u1" d="M378.7,65.4c-.5.7-1.3.9-2.1,1.2-3.5,1.2-7,2.5-10.5,3.6-5.9,1.9-11.8,3.8-17.7,5.6-5.2,1.6-10.3,3.2-15.5,4.8-.7.2-1.4.6-2.3.3,0-1.3.5-2.3,1.8-3,3.9-2,7.9-4.2,11.8-6.3,9.2-4.9,18.3-9.9,27.4-14.9.8-.4,1.5-1,2.4-1,1.4,1.8,4,7.3,4.5,9.6Z"/><path class="u0" d="M216.5,134.9c-1.2-2.3-2.3-4.5-3.3-6.6-.1-.2,0-.6-.1-.9.4-.1.6-.2.9-.3,1-.2,2.1-.3,3.1-.6,4.2-1.4,8.6-2.2,12.9-3.4.7-.2,1.4-.4,2.2-.6,1.2-.3,2.3-.6,3.5-.9,1.9-.5,3.8-1,5.7-1.5,1.9-.5,3.8-1,5.7-1.5,2.8-.7,5.5-1.5,8.3-2.3.7-.2,1.5-.4,2.2-.6,3.9-1,7.9-2,11.8-3.1,2.3-.6,4.6-1.3,7-1.9.8-.2,1.4-.5,1.8-1.2.4-.7,1.1-1,1.9-.9,1.8,0,3.6,0,5.4,0-.2.2-.2.4-.3.4-.4.2-.8.4-1.2.6-22.3,8.4-44.6,16.8-67.2,25.4Z"/><path class="u0" d="M288,120.7c.3.8.1,1.5,0,2.3-.7,6.1-1.3,12.1-1.7,18.2,0,1.3-.3,2.7-.4,4-.2,1.9-.5,3.9-.7,5.8-.2,1.9-.3,3.7-.5,5.6-.6,5.9-1.1,11.9-1.7,17.8,0,.8-.2,1.7-.2,2.5,0,1.3-.3,2.5-1,3.7-.6,1-.6,2.3-.8,3.5-.2,1.1-.3,2.2-.6,3.3,0,.3-.3.7-.5,1-2.2-.5-4.3-.9-6.5-1.8,0-.5,0-1.1.1-1.5,3.5-17.1,7-34.3,10.5-51.4.7-3.4,1.3-6.8,2-10.2.2-.9.3-2,1.2-2.6.2-.1.4-.2.6-.3Z"/><path class="u1" d="M383.6,80.8c.4,2.1.8,3.9,1.2,5.8,0,.3,0,.6,0,1-.5,0-1,.2-1.5.3-4,.3-8,.6-11.9,1-1.1,0-2.3.2-3.4.2-3.2.2-6.3.4-9.5.7-5,.4-10.1.8-15.1,1.2-2.2.2-4.4.2-6.5.5-4.5.5-9,.8-13.5,1-2.8.2-5.5.5-8.3.8-1,0-1.9.2-2.9,0,.7-1.4,1.3-1.9,2.5-2.1,1.8-.3,3.6-.6,5.4-.8,3.5-.5,7-1,10.5-1.5,1.9-.3,3.7-.6,5.6-.9,2.6-.4,5.2-.8,7.8-1.2,1-.1,1.9-.3,2.9-.5,1.1-.2,2.2-.3,3.4-.4,1.6-.2,3.1-.5,4.7-.7,2.7-.4,5.4-.8,8-1.2.3,0,.6,0,.9-.1,4.4-1,8.9-1.3,13.4-2.1,1.3-.2,2.5-.5,3.8-.7.9-.1,1.8-.2,2.9-.3Z"/><path class="u3" d="M382.3,128.7c-1.4,2.9-3.1,5.3-4.6,8-1.3-.5-2.5-1-3.7-1.4-3-1.3-6.1-2.6-9.1-3.9-3.3-1.5-6.6-3-9.9-4.4-2.3-1-4.7-2-7-3-2.8-1.2-5.6-2.5-8.5-3.7-3.5-1.5-7-3.1-10.6-4.6-1-.4-2.1-.9-3.1-1.4-.4-.2-.5-.5-.4-.9.1-.5.4-.8,1-.7.5,0,1,.2,1.5.4,5.6,1.6,11.3,3.3,16.9,4.9,5.8,1.7,11.7,3.5,17.5,5.2,2.7.8,5.5,1.5,8.3,2.3,3.7,1.1,7.5,2.2,11.6,3.4Z"/><path class="u3" d="M310,115.1c.3.4.6.8,1,1.1,3.8,2.7,7.6,5.4,11.5,8.1,3.3,2.3,6.7,4.7,10,7,2.8,2,5.6,4,8.5,6,5.6,3.9,11.2,7.9,16.8,11.8,2.4,1.7,4.8,3.4,7.2,5.1.3.2.6.5.8.7-.5,1.7-2.2,4.7-4,6.9-.3-.1-.7-.2-.9-.5-4.6-4-9.1-8.1-13.7-12.1-3.4-3-6.8-5.9-10.2-8.9-3-2.6-5.9-5.3-8.9-8-4.8-4.2-9.6-8.4-14.4-12.7-1.7-1.5-3.4-3-5-4.6-.4-.4-.7-1-1-1.5.4.2.8.4,1.2.6,0,0,0,0,0,0,.3.6.8,1,1.5,1h0Z"/><path class="u1" d="M302.9,83c0-1.8,0-3.6,0-5.4,0-3.9,0-7.8,0-11.8,0-1.5.3-2.7,1.2-4,3-4.1,3-4.1,4-9.1,1.1-5.2,2.1-10.3,3.1-15.5.7-3.5,1.3-7,1.9-10.4.6-3.3,1.3-6.7,1.9-10,0-.4.3-.8.4-1.3,2.3.2,4.4.6,6.6,1.2,0,.5,0,1-.1,1.4-2.8,9.8-5.7,19.7-8.5,29.5-1.8,6.2-3.7,12.4-5.5,18.6-1.5,5.1-3,10.3-4.5,15.4-.1.5-.3,1-.5,1.4,0,0-.2,0-.2,0Z"/><path class="u3" d="M304.5,117.7c14.2,19.3,28.2,38.3,42.3,57.3-.4.4-.7.7-1,.9-1.6.9-3.2,1.6-5,2.3-.3-.4-.6-.7-.8-1-3.3-5.3-6.6-10.6-10-15.9-5-7.9-9.9-15.8-14.9-23.7-3.2-5-6.4-10-9.6-15-.9-1.4-1.5-2.8-.9-4.8Z"/><path class="u0" d="M270.5,186.4c-2.8-1.1-5.4-2-8-3.3.3-.8.5-1.5.7-2.2,3.6-9.6,7.2-19.2,10.8-28.8,2.9-7.6,5.7-15.2,8.6-22.9.3-.7.6-1.4.9-2.1,0-.1.4-.3.6-.2.2,0,.4.3.4.4,0,.4,0,.8,0,1.1-.8,3.5-1.7,7-2.5,10.6-.8,3.4-1.6,6.8-2.4,10.1-.6,2.5-1.2,5-1.8,7.5-.9,3.7-1.8,7.5-2.6,11.2,0,.1,0,.3,0,.4-1.3,5.6-2.7,11.1-4.1,16.7,0,.4-.3.7-.5,1.4Z"/><path class="u4" d="M279.4,70.5c-4-2.9-6.5-6.6-9.4-10-6.2-7.6-12.4-15.2-18.6-22.7-1.4-1.7-2.8-3.4-4.2-5.1-.5-.6-.9-1.2-1.4-1.9,1.3-1.4,2.9-2.1,4.3-3,1.4-.9,2.8-1.7,4.3-2.6.3.4.6.7.8,1.1,2.6,4.7,5.2,9.5,7.8,14.3,3.8,6.9,7.6,13.9,11.4,20.8,1.4,2.6,2.9,5.3,4.3,7.9.1.3.2.5.5,1.2Z"/><path class="u4" d="M284.6,76.3c-.9-1.7-1.6-3.2-2.4-4.7-4.5-9.1-9.1-18.2-13.6-27.3-2.5-4.9-4.9-9.8-7.4-14.7-.5-1.1-1.2-2.1-1.8-3.1-.6-1.1-.6-1.4.4-2,2.2-1.3,4.4-2.6,6.5-3.9.8.2.9.8,1.1,1.4,1.9,5.8,3.9,11.6,5.8,17.3,2.6,7.8,5.2,15.7,7.8,23.5,1.3,3.9,2.7,7.8,4,11.7.2.6.3,1.2-.5,1.9Z"/><path class="u1" d="M311.3,91.1c.2-.4.2-.6.4-.7,14.1-17.8,28.2-35.6,42.3-53.3.1-.2.3-.3.5-.4,1.6,1,4,3.3,5.2,5-1,1.5-2.3,2.7-3.6,4-3.1,3.3-6.2,6.5-9.4,9.8-3.5,3.7-7.1,7.4-10.7,11.1-5.3,5.5-10.7,11.1-16.1,16.5-2.6,2.6-5.3,5.1-8,7.6-.1.1-.3.2-.7.4Z"/><path class="u3" d="M307,118.8c.1,0,.3,0,.4.1.7.6,1.4,1.2,2,1.9,14.8,15.4,29.6,30.8,44.4,46.2.3.3.5.6.7.9-.4,1.2-1.5,1.7-2.3,2.4-.8.7-1.4,1.5-2.6,2-.6-.6-1.2-1.3-1.8-1.9-5-5.8-9.9-11.6-14.9-17.4-2.6-3.1-5.3-6.2-7.8-9.4-2.6-3.3-4.9-6.7-7.4-10-2.3-3.2-4.7-6.3-7-9.5-1.2-1.6-2.4-3.3-3.6-5,0-.1,0-.3,0-.4Z"/><path class="u1" d="M303.1,93.3c-.3-1.6-.4-4.1-.2-4.8,0,0,0-.2,0-.2,1.2-1.6,1.2-3.7,1.9-5.5.7-1.8,1.2-3.7,1.8-5.6.6-1.9,1.1-3.8,1.7-5.6.6-1.9,1.2-3.7,1.8-5.6,1.9-6.1,3.7-12.3,5.5-18.4,2.7-8.9,5.4-17.9,8.2-26.8.2-.8.6-1.5.8-2.3,1.9-.3,3.6,0,5.3.7,0,.5-.1,1-.3,1.5-1.5,4.1-3,8.2-4.4,12.3-2.2,6-4.4,12-6.6,18.1-1,2.8-2,5.5-3,8.3-2.4,6.6-4.7,13.2-7.1,19.8-.3.8-.8,1.6-1.2,2.4-.7,1-1.4,2-2.1,2.9-.2.3-.3.6-.2,1.1.5-.4,1.1-.9,1.7-1.4.7,1.1.6,2.1,0,3.1-1.1,1.9-2.2,3.7-3.6,6Z"/><path class="u1" d="M369.1,50.4c-.4.3-.6.6-.9.8-11.9,8-23.8,16-35.7,23.9-.2.1-.4.1-.7.2-.5-.6-.3-1.3-.1-1.9.2-.6.4-1.1.8-1.6.5-.6,1.1-1.1,1.6-1.6,8.7-8.6,17.5-17.3,26.2-25.9.4-.4.8-.7,1.1-1,1.5.8,5.7,4.8,7.6,7.1Z"/><path class="u3" d="M304.3,113.1c.3,0,.5,0,.7.2,19.1,16.9,38.1,33.7,57.1,50.6-1.1,1.7-2.6,3.1-4.5,4.3-1.1-.7-2-1.8-2.9-2.7-3.2-3.3-6.4-6.6-9.6-9.9-1.5-1.5-2.9-3-4.4-4.5-3.6-3.7-7.2-7.3-10.8-11-2.2-2.3-4.5-4.5-6.7-6.8-.8-.9-1.5-1.9-2-3-.6-1.3-1.5-2.2-2.5-3.1-4.4-3.9-8.8-7.8-13.3-11.7-.2-.2-.5-.4-.7-.6-.5-.5-.6-1.2-.4-1.9Z"/><path class="u1" d="M308,84.1c.2-.4.6-.7.7-1.1.6-2.4,1.8-4.6,3-6.8,8.3-15.6,16.7-31.2,25-46.9.9-1.7,1.8-3.3,2.6-5,1.5.4,3.8,2,5.5,3.7-.2.4-.5.9-.8,1.3-3.3,5.1-6.5,10.2-9.8,15.2-3.8,6-7.7,11.9-11.5,17.8-4.3,6.7-8.5,13.3-12.8,20-.3.5-.7,1-1.1,1.4-.2.2-.5.2-.8.2h0Z"/><path class="u1" d="M303,58.9c-.1-.7-.2-1-.2-1.2,0-4.3,0-8.6,0-12.9,0-2.9.3-5.9.3-8.8,0-6.6-.1-13.3-.2-19.9,0-.8-.2-1.7.3-2.4,2-.3,6.1-.2,7.9.2.4.9.2,1.9,0,2.8-.4,3.4-.9,6.7-1.3,10.1-.5,3.8-1.1,7.6-1.6,11.4-.6,4.3-1.1,8.5-1.6,12.8-.2,1.3-.3,2.7-.6,4,0,.5-.3,1-.7,1.4-.7.8-1.5,1.5-2.5,2.6Z"/><path class="u0" d="M270.7,108.6c-1.5.2-2.6.3-3.7.4-6.2.7-12.4,1.4-18.7,2.1-3.7.4-7.3.9-11,1.3-1.5.2-3,.2-4.5.4-3.2.4-6.4.8-9.7,1.2-.8,0-1.7.2-2.5.2-2.3.2-4.6.5-7,.7-1.3.1-2.5.2-3.7.2-.9-2-1.7-5.2-1.6-6.9.2,0,.4-.2.6-.2,20.2.2,40.5-.3,60.7.2.2,0,.4.1,1,.3Z"/><path class="u3" d="M311.7,190.5c-2.2.1-4.1,1.1-6.3.6,0-.5-.2-1-.2-1.5.3-8.1-.4-16.3-.5-24.4,0-4.3-.3-8.6-.4-12.9,0-2.1.2-4.2.2-6.3,0-1.3-.1-2.7-.2-4,0-.5,0-1.1,0-1.6,0-4.1-.2-8.1-.2-12.2,0-.4,0-.8.4-1.2.3,2,.7,4,1,6,.8,6.3,1.5,12.6,2.3,18.8.6,5.5,1.2,11.1,1.8,16.6.5,4.2.9,8.4,1.4,12.6.3,2.4.6,4.8.8,7.2,0,.7,0,1.5,0,2.5Z"/><path class="u4" d="M271.3,100.2c-3.4-.1-6.8-.3-10.2-.4-4.1,0-8.2,0-12.2-.2-1.1,0-2.2-.2-3.4-.3-1.1,0-2.1-.1-3.2-.1-7.7,0-15.4,0-23.1,0-2.8,0-5.6-.3-8.4-.4-1.1,0-2.2,0-3.3-.1-.8-1.7-.9-3.3-.5-6.9.4,0,.8,0,1.2,0,1.2.1,2.4.2,3.6.4,1.9.3,3.9.7,5.8.6.4,0,.7.2,1.1.3.5.1,1,.4,1.5.4,2,0,4,.3,6.1.6.4,0,.9,0,1.4,0,2.6.7,5.2.9,7.8,1.1,3.1.3,6.1,1.2,9.2,1.1,0,0,.2,0,.2,0,2.1.7,4.3.8,6.4,1,.9,0,1.8.2,2.7.3.7,0,1.5.1,2.2.3,1.6.3,3.1.7,4.7.6.4,0,.9.2,1.3.3.8.1,1.6.3,2.4.4,1.4.2,2.8.2,4.2.6.7.2,1.5,0,2.2,0,0,.1,0,.2,0,.3Z"/><path class="u0" d="M213.1,125c-.9-2-1.3-4.1-1.7-6.4.6-.2,1.2-.5,1.8-.5,3.5-.5,7-1,10.5-1.5,3.3-.5,6.6-.9,9.8-1.3,4.3-.6,8.5-1.2,12.7-1.8,1.9-.3,3.9-.6,5.8-.9,2.1-.3,4.2-.5,6.3-.8,3.4-.5,6.8-1.1,10.3-1.6.7-.1,1.5-.1,2.2-.1.2,0,.3.2.6.4-.4.8-1.2.9-1.9,1.1-2.5.6-5,1.1-7.5,1.8-2.8.7-5.7,1.5-8.5,2.2-1.9.5-3.8.8-5.7,1.3-3.7.9-7.4,1.9-11.2,2.8-2,.5-4.1.9-6.2,1.4-5.5,1.3-10.9,2.7-16.4,4-.3,0-.6,0-1,.1Z"/><path class="u4" d="M208.7,87.5c0-.4,0-1,.2-1.4.6-1.2.7-2.4.8-3.7,0-.6.3-1.1.4-1.7,2,.2,50.7,15.1,53.7,16.2-1.9-.3-3.5-.5-5.1-.7-2-.2-4.1-.3-6.1-.6-2-.3-4-.6-6-.9-2.2-.4-4.4-.9-6.6-1.3-3.9-.7-7.9-1.3-11.8-2-3-.5-6.1-1.1-9.1-1.6-1.4-.2-2.8-.7-4.2-.6-.3,0-.6-.1-.9-.2-1.1-.4-2.1-.7-3.3-.7-.7,0-1.3-.2-2-.8Z"/><path class="u4" d="M271.5,18.7c2.9-.8,5.5-1.8,8.1-2.4.7.6.6,1.2.6,1.8-.3,3.1.3,6.2.5,9.2.2,3.2.8,6.4,1.2,9.6,0,.3,0,.6,0,.9,0,2.6.3,5.1.8,7.6,0,.3,0,.6,0,.9,0,3.5.6,6.9.9,10.3.3,2.9.6,5.8,1,8.7,0,.8.3,1.6.3,2.4-1.5-4-2.4-8.1-3.5-12.2-1.2-4-2.1-8.1-3.2-12.2-1.1-4.1-2.2-8.3-3.3-12.4-1.1-4-2.3-8.1-3.3-12.4Z"/><path class="u0" d="M289.1,108.7c-21.7,13.5-43.3,26.9-64.9,40.3-.3-.2-.5-.3-.6-.5-.9-1.2-1.8-2.4-2.7-3.8.6-.4,1-.7,1.5-1,7.9-4.2,15.7-8.3,23.6-12.5,5.1-2.7,10.1-5.3,15.2-8,3.7-2,7.4-4,11.1-6,4.4-2.3,8.8-4.6,13.2-7,.7-.4,1.4-.9,2.1-1.4.4-.3.9-.6,1.6-.2Z"/><path class="u0" d="M247.5,173.2c-.4-.4-.8-.7-1.1-1-1-1.1-2.1-2.2-3-3.2.2-1.1.8-1.6,1.4-2.2,2.4-2.5,4.8-5,7.1-7.6,3.7-4,7.4-8,11-12,4.2-4.5,8.4-9.1,12.6-13.6,1.6-1.8,3.3-3.6,4.9-5.3.3-.4.7-.7,1.4-1.3-.2.6-.2.8-.3,1-11.1,15-22.2,29.9-33.3,44.9-.1.2-.4.2-.6.4Z"/><path class="u4" d="M220.7,58.7c1.1-1.6,2.2-3.1,3.8-4.3,1.5.5,2.6,1.5,3.8,2.3,2.9,1.9,5.7,3.9,8.6,5.8,7.5,5,15,10.1,22.5,15.1,4.2,2.8,8.5,5.7,12.7,8.5,0,.1,0,.2,0,.2,0,0-.1,0-.2,0-16.9-9-33.9-18-50.8-27-.1,0-.2-.2-.4-.6Z"/><path class="u3" d="M342.1,114.5c1.4.2,2.8.4,4.2.6.4,0,.9.1,1.3.1,3.7,0,7.3.8,11,1.1.2,0,.4.1.7.1,3.9,0,7.6,1,11.5,1.1,1.6,0,3.1.3,4.7.5,2.7.3,5.4.6,8.1.9.3,0,.6.1.9.2,0,2.1-.8,4-.9,6,0,.4-.4.8-.6,1.2-1.7-.4-3.2-.9-4.8-1.3-1.7-.4-3.3-.9-5-1.3-3.2-.8-6.4-1.6-9.6-2.4-3.4-.9-6.8-1.9-10.2-2.8-2.3-.6-4.7-1.1-7-1.7-1.6-.4-3.2-.7-4.3-2.3Z"/><path class="u0" d="M276.5,113.5c-.1.3-.2.4-.3.5-18.7,9.4-37.4,18.8-56.1,28.2-1.5-1.4-1.6-1.5-2.5-3.7.3-.2.7-.5,1.1-.7,2.6-1.1,5.3-2.2,7.9-3.3,7.3-3.1,14.6-6.2,21.9-9.3,7.6-3.2,15.1-6.4,22.7-9.6,1.7-.7,3.4-1.5,5.3-2.2Z"/><path class="u0" d="M253.7,177.8c-1.6-1.3-3.3-1.9-4.6-3.3,1-2,19.7-27.9,22.2-30.8.5.2,1,.4,1.4.6.3.9-.2,1.5-.6,2-2.2,3.9-4.4,7.7-6.7,11.5-1.8,3.1-3.7,6.2-5.5,9.4-1.7,2.9-3.4,5.9-5.1,8.8-.3.5-.7,1-1.2,1.7Z"/><path class="u0" d="M260.7,181.4c-1.7-.8-3.2-1.6-4.5-2.7.2-.6.4-1.1.7-1.6,2-3.8,4-7.6,6-11.4,2.3-4.5,4.7-9,7-13.4,1.2-2.2,2.3-4.4,3.5-6.6.5-.9.8-1.8.3-2.8-.4-.8-.3-1.4.2-2.1,1.7-2.3,3.3-4.7,4.9-7,.2-.2.4-.5.9-1-.2.7-.2,1.1-.3,1.4-2.4,6.2-4.9,12.3-7.3,18.5-1.6,4.2-3.3,8.4-4.9,12.7-1.2,3.2-2.5,6.3-3.7,9.5-.6,1.5-1.1,3-1.7,4.4-.3.7-.6,1.4-1,2.3Z"/><path class="u1" d="M313.2,70.3c.2-.7.4-1.4.7-2.1,6.3-15.1,12.6-30.2,18.9-45.3.3-.8.7-1.6,1.1-2.5,1.7.2,3.1,1,4.4,2-.2.5-.3,1-.6,1.5-4.9,9.4-9.9,18.8-14.8,28.2-2.1,4.1-4.2,8.2-6.3,12.3-1,1.9-2,3.7-3,5.6,0,.2-.3.3-.5.4,0,0,0,0,0,0Z"/><path class="u3" d="M309.4,131.8c.6,0,.9.5,1.1,1,1,1.7,2.1,3.5,3.2,5.2,7.9,13,15.8,26.1,23.6,39.1.4.6.7,1.3,1.2,2-1.7.6-3.1,1.5-5,1.1-1.3-2.6-2.6-5.2-3.9-7.9-1.3-2.7-2.7-5.4-4-8.1-1.7-3.4-3.3-6.8-5-10.1-3.4-7-6.8-14-10.2-20.9-.3-.5-.7-1-1-1.4h0Z"/><path class="u1" d="M335.5,74.9c.3-.8,1-1.1,1.6-1.5,3.5-2.4,7-4.7,10.5-7,6.6-4.4,13.3-8.9,19.9-13.3.6-.4,1.1-.7,1.7-1.1,1.1,1.2,1.5,2.6,2.2,4.1-.5.3-.9.6-1.3.9-4.1,2.2-8.3,4.3-12.4,6.5-6.6,3.5-13.2,7-19.8,10.5-.8.4-1.6.7-2.5,1h0Z"/><path class="u3" d="M308,146.3c.2.3.5.5.6.9.5,1.7,1,3.3,1.4,5,1.2,4.3,2.4,8.6,3.6,12.9,1.8,6.2,3.5,12.5,5.3,18.7.4,1.3.6,2.6,1,4-1.2.5-2.3.8-3.6.7-.6-1.4-.8-2.9-1-4.4-.3-1.9-.7-3.7-1-5.6-1.1-5.6-2.1-11.3-3.2-16.9-.9-4.9-1.9-9.8-2.8-14.7,0-.2-.2-.4-.2-.6h0Z"/><path class="u1" d="M330.4,74.5c-.3,1.7-.5,3.1-.8,4.4-.2,1.3-.5,2.7-.7,4-1.5,1-7.9,3.9-12,5.3-.3-.5.1-.7.3-.9,1.8-1.8,3.6-3.6,5.5-5.4,1.8-1.8,3.6-3.6,5.4-5.5.6-.6,1.1-1.2,2.3-1.9Z"/><path class="u3" d="M308,146.3v-1.2s0,0,.1,0c0,.4,0,.8-.1,1.2,0,0,0,0,0,0Z"/><path class="u3" d="M309.4,131.8c0,0,0-.2,0-.3,0,0,0,0,0,.1,0,0,0,.1,0,.2,0,0,0,0,0,0Z"/><path class="u1" d="M308,84v.5c0-.1,0-.3,0-.4,0,0,0,0,0,0Z"/><path class="u1" d="M335.5,74.9c0,0-.2.2-.3.3.1,0,.2-.1.3-.2,0,0,0,0,0,0Z"/><path class="u1" d="M312.4,72.3c0,0,0,.1-.1.2,0,0,.1,0,.2-.1h0Z"/><path class="u1" d="M312.4,72.3c0-.4.1-.7.5-.9,0,0,0,0,0,0-.2.3-.3.6-.5.9,0,0,0,0,0,0Z"/><path class="u1" d="M313.1,70.2c0,.4-.2.8-.3,1.2,0,0,0,0,0,0-.1-.4-.1-.9.3-1.2,0,0,0,0,0,0Z"/><path class="u3" d="M374.9,137.9c-4.7-2.2-9.5-4.3-14.2-6.5-2.6-1.2-5.2-2.4-7.8-3.5-2.7-1.2-5.5-2.4-8.3-3.7-4-1.8-8.1-3.7-12.1-5.5-3.2-1.5-6.5-2.8-9.7-4.4-1.2-.6-2.5-1-3.8-1.3-1.9-.3-3.7-.6-5.6-.9-.7,0-1.3-.2-1.9.3,0,0,0,0-.1,0h0,0s0,0,0,0c-1,0-1.7-.6-2.4-1-1.3-.8-2.5-1.6-3.8-2.4-.4-.2-.8-.3-1.3-.5-.3,1.4,0,2.3,1.2,2.9.8.5,1.8.8,2.2,1.8,0,.1,0,.2.1.3.4.2.8.4,1.2.6.3.6.7.9,1.4.9,0,0,0,0,0,0,.9,0,1.5.7,2.1,1.1,6.2,4.1,12.4,8.3,18.6,12.4,3.3,2.2,6.5,4.4,9.8,6.6,2.3,1.6,4.6,3.1,6.9,4.6,3,1.9,6,3.8,8.9,5.8,3.5,2.3,6.9,4.6,10.3,6.9.6.4,1.2.9,2.2.9.5-.7,1.2-1.5,1.6-2.3.4-.8,1.5-1.3,1.4-2.5-1.2-.7-2.4-1.4-3.5-2.1-2.5-1.5-5.1-3-7.6-4.5-3.1-1.8-6.2-3.7-9.3-5.5-2.9-1.7-5.8-3.4-8.8-5.1-2.9-1.7-5.8-3.5-8.7-5.3-2.8-1.6-5.6-3.2-8.4-4.8-3.4-2-6.7-4-10.1-6-.4-.2-1-.4-1-1,0,0,0,0,0,0h0c.9-.2,1.5.5,2.2.8,5.7,3.2,11.4,6.4,17.1,9.7,2,1.1,4.1,2.2,6.2,3.3,5.3,2.9,10.5,5.9,15.8,8.9,5.8,3.2,11.6,6.5,17.3,9.7.4.2.8.3,1.2.5,1.1-1.1,1.5-2.5,2.2-3.8.7-1.2,1.6-2.3,1.8-3.9-1.2-.6-2.4-1.1-3.5-1.7Z"/></symbol></svg>
+<div class="splash" id="splash" aria-hidden="true"><svg class="splogo" viewBox="0 0 595.3 352.1"><use href="#ucmlogo"/></svg></div>
+<script>(function(){var s=document.getElementById('splash'),r=document.documentElement,on=!!s&&matchMedia('screen and (max-width:760px)').matches;r.classList.toggle('sp',on);if(!on)return;
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches,sv=s.querySelector('svg'),sy=document.getElementById('ucmlogo');
+if(!rm&&sv&&sy){try{sv.innerHTML=sy.innerHTML;s.classList.add('anim');var cx=297.4,cy=102.3;Array.prototype.forEach.call(sv.querySelectorAll('path'),function(p,i){if(p.getAttribute('class')==='u2')return;var b=p.getBBox(),x=b.x+b.width/2-cx,y=b.y+b.height/2-cy,d=Math.hypot(x,y);p.classList.add('ray');p.style.setProperty('--d',(.2+(80-Math.min(d,80))/80*.12+((i*37)%11)/11*.12).toFixed(3)+'s')})}catch(e){}}
+setTimeout(function(){s.classList.add('out');setTimeout(function(){r.classList.remove('sp');s.classList.remove('out')},rm?150:520)},rm?700:s.classList.contains('anim')?2100:1300)})();</script>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="wrap">
+  <a class="brand" href="#home"><svg class="bmark" viewBox="205.5 12 184 181" aria-hidden="true"></svg>God’s Story</a>
+  <button class="back" id="back" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Overview</button>
+  <span class="btitle" id="btitle" aria-hidden="true"></span>
+  <button class="ibtn" id="themeBtn" type="button" aria-label="Switch appearance"></button>
+  <button class="ibtn dsk" id="settingsBtn" type="button" aria-label="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
+</div></header>
+
+<nav class="sidebar" id="sidebar" aria-label="Sections">
+  <div class="sbrand"><svg class="bmark" viewBox="205.5 12 184 181" aria-hidden="true"></svg>God’s Story</div>
+  <div class="ssub">A Gospel-Sharing Tool</div>
+  <a href="#home" data-sv="home"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 11.2 12 4l8.4 7.2"/><path d="M5.8 9.4V19.6c0 .6.4 1 1 1h3.4v-5.5h3.6v5.5h3.4c.6 0 1-.4 1-1V9.4"/></svg>Overview</a>
+  <h6>Nine steps</h6>
+  <div id="sbSteps"></div>
+  <h6>Practice</h6>
+  <a href="#verses" data-sv="verses"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.9C9.9 5.4 7 4.9 3.3 5.3v12.9c3.7-.4 6.6.1 8.7 1.6 2.1-1.5 5-2 8.7-1.6V5.3C17 4.9 14.1 5.4 12 6.9z"/><path d="M12 6.9v12.9"/></svg>Memory verses</a>
+  <button type="button" data-sbx="share"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 19.5c2.5-.3 4.8-1.2 6.6-3.2l8.6-9.3a2.1 2.1 0 0 0-3-3L7 12.7c-1.8 2-2.6 4.3-3 6.8z"/><path d="M14 5.8l3 3"/></svg>Share mode</button>
+  <div class="sfoot">
+    <a href="#about" data-sv="about"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>About &amp; privacy</a>
+    <button type="button" data-sbx="settings"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Settings</button>
+  </div>
+</nav>
+
+<main id="main" tabindex="-1">
+  <section class="view" id="home" data-title="">
+    <div class="hero"><div class="wrap">
+      <svg class="hlogo" viewBox="0 0 595.3 352.1" role="img" aria-label="Union Church of Manila"><use href="#ucmlogo"/></svg>
+      <p class="eyebrow">A Gospel-Sharing Tool</p>
+      <h1>God’s Story</h1>
+      <p class="sub">Learn to draw the Bridge illustration and share the good news in nine simple steps.</p>
+      <div class="ctas">
+        <a class="btn" id="ctaStart" href="#step-1"><span></span>Start with Step 1</a>
+        <button class="btn ghost" type="button" data-present="0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 19.5c2.5-.3 4.8-1.2 6.6-3.2l8.6-9.3a2.1 2.1 0 0 0-3-3L7 12.7c-1.8 2-2.6 4.3-3 6.8z"/></svg>Share mode</button>
+        <a class="btn ghost" data-pdf href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg>Download PDF</a>
+      </div>
+      <div class="stage" id="heroStage"><button class="ibtn replay" type="button" aria-label="Replay the drawing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/></svg></button></div>
+    </div></div>
+
+    <section class="s"><div class="wrap intro">
+      <div><h3>The Bridge Illustration</h3><p class="lead">“The Bridge” uses a simple way to share the gospel message using illustration, showing there is no intermediary to God except Jesus. Every Scripture verse cited fits in the context of its intended meaning in the Bible.</p></div>
+      <div class="why">
+        <p>There are plenty of great sermons or teachings out there exhorting Christians to evangelize or to witness, yet the vast majority remain unmoved. Based on studies, only one out of 10 Christians make a genuine effort to share the gospel with others; there might be several reasons for this, but here are two main ones:</p>
+        <div class="n"><b>1</b><p>Basically, some believe that the believers’ presence is enough, that it is enough to show through one’s life the goodness of God. Indeed, presence is essential. But this will not provide adequate information to lead a person to saving faith in Christ. The apostle Paul pointed out, <span class="vq">“How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching?”</span> (<button type="button" class="ref" data-ref="Romans 10:14">Romans 10:14</button>). Proclamation of the gospel is needed to lead the lost to Jesus Christ.</p></div>
+        <div class="n"><b>2</b><p>Many Christians simply don’t know how to share the good news of salvation.</p></div>
+      </div>
+    </div></section>
+
+    <section class="s" style="padding-top:0"><div class="wrap">
+      <div class="head"><p class="eyebrow">Nine steps</p><h2>Say it. Draw it. Share it.</h2><p>Each step pairs what to say with what to draw, so you can practice until it feels natural.</p></div>
+      <div class="steps-grid" id="stepsGrid"></div>
+    </div></section>
+  </section>
+
+  <section class="view" id="verses" data-title="Memory verses">
+    <section class="s"><div class="wrap">
+      <div class="head"><p class="eyebrow">Practice</p><h2>Memory verses</h2><p>The ten verses you’ll use, in the order they come up. Hide the words to test yourself, then tap each word to check.</p></div>
+      <div class="vtools"><div class="seg" id="vmode" role="group" aria-label="Verse view"><button type="button" data-mode="show" aria-pressed="true">Show words</button><button type="button" data-mode="hide" aria-pressed="false">Hide words</button></div></div>
+      <div class="vlist" id="vlist"></div>
+    </div></section>
+  </section>
+
+  <section class="view" id="about" data-title="About">
+    <section class="s"><div class="wrap about">
+      <div class="head"><p class="eyebrow">About</p><h2>About &amp; privacy</h2></div>
+      <h3>About this app</h3>
+      <p>God’s Story: A Gospel-Sharing Tool is a resource of Union Church of Manila. This app presents its nine steps for learning to draw the Bridge illustration and to share the gospel with another person.</p>
+      <p>Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version), copyright © 2001 by Crossway Bibles, a publishing ministry of Good News Publishers. Used by permission. All rights reserved. The Bridge Illustration is adapted from The Bridge to Life © 1976 The Navigators, all rights reserved.</p>
+      <p>Design and Development by Ernie Agtarap / Mulberry Lane Creative, Metuchen, NJ, United States.</p>
+      <h3>Privacy</h3>
+      <ul>
+        <li>There are no accounts, ads or trackers.</li>
+        <li>Your progress, the age you enter in Step 8 and your settings are saved only in this browser, on this device. Nothing is sent anywhere.</li>
+        <li>Fonts load from Google Fonts. Verse audio plays from files that come with the app.</li>
+        <li>You can erase everything at any time in Settings.</li>
+      </ul>
+    </div></section>
+  </section>
+</main>
+
+<div class="scrim" id="scrim"></div>
+<div class="sheet" id="reader" role="dialog" aria-modal="true" aria-labelledby="rdTitle" hidden>
+  <div class="grab"></div>
+  <div class="shead"><div style="flex:1"><p class="eyebrow">ESV</p><h3 id="rdTitle"></h3></div><button class="x" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <p class="rtext" id="rdText"></p>
+  <div class="rfoot"><button class="play" type="button" id="rdPlay"></button><a id="rdLink" target="_blank" rel="noopener">Read in context on BibleGateway</a></div>
+</div>
+
+<div class="sheet" id="settings" role="dialog" aria-modal="true" aria-labelledby="stTitle" hidden>
+  <div class="grab"></div>
+  <div class="shead"><h3 id="stTitle">Settings</h3><button class="x" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <p class="glabel">Appearance</p>
+  <div class="group"><div class="cell"><span>Theme</span><div class="seg" data-pref="theme" role="group" aria-label="Theme"><button type="button" data-v="light">Light</button><button type="button" data-v="auto">Auto</button><button type="button" data-v="dark">Dark</button></div></div>
+    <div class="cell"><span>Text size</span><div class="seg" data-pref="size" role="group" aria-label="Text size"><button type="button" data-v="0">A</button><button type="button" data-v="1" style="font-size:16px">A</button><button type="button" data-v="2" style="font-size:18px">A</button></div></div></div>
+  <p class="glabel">Drawing</p>
+  <div class="group"><label class="cell"><span>Show step letters</span><input class="sw" type="checkbox" id="swMarks"></label>
+    <label class="cell"><span>Animate the drawing</span><input class="sw" type="checkbox" id="swAnim"></label></div>
+  <div class="group"><a class="cell blue" data-pdf href="#">Download the PDF</a><button class="cell" type="button" data-go="#about">About &amp; privacy<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
+  <div class="group"><button class="cell red" type="button" id="erase">Erase my progress</button></div>
+</div>
+
+<div class="present" id="present" role="dialog" aria-modal="true" aria-label="Share mode" hidden>
+  <div class="ptop"><p class="pt" id="ptitle"></p><button class="x" id="pclose" type="button" aria-label="Close share mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="pcanvas" id="pcanvas" style="position:relative"><div class="pstart" id="pstart"><p><b>Ready to share?</b>Tap or press → to draw each step.<span class="rot">Turn your phone sideways for a bigger drawing.</span></p></div></div>
+  <div class="pbottom"><p class="pcue" id="pcue" aria-live="polite"></p>
+    <div class="pctl"><button class="ibtn" id="pprev" type="button" aria-label="Previous step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button><div class="pdots" id="pdots" aria-hidden="true"></div><button class="ibtn" id="pnext" type="button" aria-label="Next step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button></div></div>
+</div>
+
+<script>
+var SCRIPTURE={"Romans 3:23": "[23] for all have sinned and fall short of the glory of God,", "Romans 6:23": "[23] For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.", "Ephesians 2:8-9": "[8] For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, [9] not a result of works, so that no one may boast.", "1 Peter 3:18": "[18] For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to death in the flesh but made alive in the spirit,", "John 14:6": "[6] Jesus said to him, “I am the way, and the truth, and the life. No one comes to the Father except through me.", "John 3:16": "[16] “For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.", "John 1:12": "[12] But to all who did receive him, who believed in his name, he gave the right to become children of God,", "John 5:24": "[24] Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life.", "John 6:47": "[47] Truly, truly, I say to you, whoever believes has eternal life.", "Romans 10:14": "[14] How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching?"};
+var AUDIO={"Romans 3:23": "audio/romans-3-23.mp3", "Romans 6:23": "audio/romans-6-23.mp3", "Ephesians 2:8-9": "audio/ephesians-2-8-9.mp3", "1 Peter 3:18": "audio/1-peter-3-18.mp3", "John 14:6": "audio/john-14-6.mp3", "John 3:16": "audio/john-3-16.mp3", "John 1:12": "audio/john-1-12.mp3", "John 5:24": "audio/john-5-24.mp3", "John 6:47": "audio/john-6-47.mp3", "Romans 10:14": "audio/romans-10-14.mp3"};
+var BRIDGE="<svg class=\"bridge\" viewBox=\"0 0 720 560\" role=\"img\" aria-label=\"The Bridge illustration\" preserveAspectRatio=\"xMidYMid meet\"><defs><filter id=\"__ID__rough\" x=\"-2%\" y=\"-2%\" width=\"104%\" height=\"104%\"><feTurbulence type=\"fractalNoise\" baseFrequency=\"0.04\" numOctaves=\"2\" seed=\"3\"/><feDisplacementMap in=\"SourceGraphic\" scale=\"2.2\"/></filter></defs><g><g class=\"ly\" data-s=\"1\" data-k=\"B\" style=\"--o:0\"><g class=\"mk\"><circle cx=\"118\" cy=\"104\" r=\"11\"/><text x=\"118\" y=\"108.5\" text-anchor=\"middle\">B</text></g><path class=\"ln fig\" d=\"M54 112 a9 9 0 1 0 0.1 0\" pathLength=\"1\"/><path class=\"ln fig\" d=\"M54 122 L51 147 M51 147 L41 170 M51 147 L62 168 M52 130 L40 142 M52 130 L65 138\" pathLength=\"1\"/><text class=\"hw big\" x=\"72\" y=\"152\">US</text><text class=\"hw big\" x=\"545\" y=\"74\" text-anchor=\"middle\">GOD</text><path class=\"ln ray\" d=\"M497 40 L490 28\" pathLength=\"1\"/><path class=\"ln ray\" d=\"M518 26 L516 13\" pathLength=\"1\"/><path class=\"ln ray\" d=\"M542 22 L544 9\" pathLength=\"1\"/><path class=\"ln ray\" d=\"M566 25 L572 13\" pathLength=\"1\"/><path class=\"ln ray\" d=\"M588 36 L598 27\" pathLength=\"1\"/><path class=\"ln ray\" d=\"M600 58 L614 54\" pathLength=\"1\"/><path class=\"ln ray\" d=\"M602 82 L616 86\" pathLength=\"1\"/><path class=\"ln ray\" d=\"M488 64 L474 60\" pathLength=\"1\"/><path class=\"ln ray\" d=\"M490 88 L476 94\" pathLength=\"1\"/></g><g class=\"ly\" data-s=\"2\" data-k=\"C\" style=\"--o:1\"><g class=\"mk\"><circle cx=\"486\" cy=\"300\" r=\"11\"/><text x=\"486\" y=\"304.5\" text-anchor=\"middle\">C</text></g><path class=\"ln\" d=\"M24 190 C70 182 118 170 156 168 C200 167 222 196 238 246 C252 292 262 352 270 400\" pathLength=\"1\"/><path class=\"ln\" d=\"M690 108 C640 112 598 118 566 132 C530 150 516 210 512 280 C509 330 508 370 508 404\" pathLength=\"1\"/></g><g class=\"ly\" data-s=\"2\" data-k=\"B\" style=\"--o:2\"><g class=\"mk\"><circle cx=\"20\" cy=\"206\" r=\"11\"/><text x=\"20\" y=\"210.5\" text-anchor=\"middle\">B</text></g><text class=\"hw\" x=\"28\" y=\"226\" transform=\"rotate(-9 28 226)\">Romans 3:23</text><text class=\"hw\" x=\"34\" y=\"250\" transform=\"rotate(-9 34 250)\">all have sinned</text></g><g class=\"ly\" data-s=\"3\" data-k=\"B\" style=\"--o:3\"><g class=\"mk\"><circle cx=\"26\" cy=\"272\" r=\"11\"/><text x=\"26\" y=\"276.5\" text-anchor=\"middle\">B</text></g><text class=\"hw\" x=\"36\" y=\"290\" transform=\"rotate(-9 36 290)\">Romans 6:23</text><text class=\"hw\" x=\"40\" y=\"314\" transform=\"rotate(-9 40 314)\">sin\u2019s penalty is</text><text class=\"hw\" x=\"48\" y=\"338\" transform=\"rotate(-9 48 338)\">death</text></g><g class=\"ly\" data-s=\"3\" data-k=\"D\" style=\"--o:4\"><g class=\"mk\"><circle cx=\"466\" cy=\"520\" r=\"11\"/><text x=\"466\" y=\"524.5\" text-anchor=\"middle\">D</text></g><path class=\"ln\" d=\"M92 350 C88 452 150 520 262 528 C300 531 330 530 352 528\" pathLength=\"1\"/><path class=\"ln\" d=\"M340 519 L354 528 L340 538\" pathLength=\"1\"/><text class=\"hw big\" x=\"372\" y=\"540\">Hell</text></g><g class=\"ly\" data-s=\"4\" data-k=\"B\" style=\"--o:5\"><g class=\"mk\"><circle cx=\"252\" cy=\"362\" r=\"11\"/><text x=\"252\" y=\"366.5\" text-anchor=\"middle\">B</text></g><path class=\"ln\" d=\"M124 132 C196 120 268 180 286 330\" pathLength=\"1\"/><path class=\"ln\" d=\"M275 321 L287 335 L295 318\" pathLength=\"1\"/><text class=\"hw sm\" x=\"268\" y=\"378\" transform=\"rotate(-10 268 378)\">Ephesians 2:8-9</text><text class=\"hw sm\" x=\"290\" y=\"402\" transform=\"rotate(-10 290 402)\">Not by works</text></g><g class=\"ly\" data-s=\"5\" data-k=\"B\" style=\"--o:6\"><g class=\"mk\"><circle cx=\"270\" cy=\"72\" r=\"11\"/><text x=\"270\" y=\"76.5\" text-anchor=\"middle\">B</text></g><path class=\"ln cross\" d=\"M172 174 L302 154 L288 64 L348 55 L362 145 L504 123 L510 161 L368 183 L388 322 L328 331 L308 192 L178 212 Z\" pathLength=\"1\"/></g><g class=\"ly\" data-s=\"5\" data-k=\"D\" style=\"--o:7\"><g class=\"mk\"><circle cx=\"234\" cy=\"446\" r=\"11\"/><text x=\"234\" y=\"450.5\" text-anchor=\"middle\">D</text></g><text class=\"hw\" x=\"272\" y=\"186\" transform=\"rotate(-8 272 186)\">Jesus Christ</text><text class=\"hw sm\" x=\"250\" y=\"452\" transform=\"rotate(-7 250 452)\">1 Peter 3:18 \u2014 Jesus is the Bridge</text></g><g class=\"ly\" data-s=\"5\" data-k=\"F\" style=\"--o:8\"><g class=\"mk\"><circle cx=\"242\" cy=\"486\" r=\"11\"/><text x=\"242\" y=\"490.5\" text-anchor=\"middle\">F</text></g><text class=\"hw sm\" x=\"262\" y=\"484\" transform=\"rotate(-7 262 484)\">John 14:6 \u2014 Jesus is the ONLY way</text></g><g class=\"ly\" data-s=\"6\" data-k=\"B\" style=\"--o:9\"><g class=\"mk\"><circle cx=\"128\" cy=\"58\" r=\"11\"/><text x=\"128\" y=\"62.5\" text-anchor=\"middle\">B</text></g><text class=\"hw sm\" x=\"144\" y=\"72\" transform=\"rotate(-10 144 72)\">John 3:16</text><text class=\"hw sm\" x=\"150\" y=\"96\" transform=\"rotate(-10 150 96)\">Believe</text></g><g class=\"ly\" data-s=\"6\" data-k=\"D\" style=\"--o:10\"><g class=\"mk\"><circle cx=\"378\" cy=\"40\" r=\"11\"/><text x=\"378\" y=\"44.5\" text-anchor=\"middle\">D</text></g><text class=\"hw sm\" x=\"392\" y=\"50\" transform=\"rotate(-4 392 50)\">John 1:12</text><text class=\"hw sm\" x=\"394\" y=\"74\" transform=\"rotate(-4 394 74)\">Receive</text></g><g class=\"ly\" data-s=\"7\" data-k=\"B\" style=\"--o:11\"><g class=\"mk\"><circle cx=\"514\" cy=\"146\" r=\"11\"/><text x=\"514\" y=\"150.5\" text-anchor=\"middle\">B</text></g><text class=\"hw sm\" x=\"530\" y=\"158\" transform=\"rotate(-8 530 158)\">John 5:24</text><text class=\"hw sm\" x=\"536\" y=\"190\" transform=\"rotate(-8 536 190)\">a. has eternal life</text><text class=\"hw sm\" x=\"540\" y=\"222\" transform=\"rotate(-8 540 222)\">b. does not come into</text><text class=\"hw sm\" x=\"566\" y=\"244\" transform=\"rotate(-8 566 244)\">judgement</text><text class=\"hw sm\" x=\"546\" y=\"276\" transform=\"rotate(-8 546 276)\">c. has passed from</text><text class=\"hw sm\" x=\"570\" y=\"298\" transform=\"rotate(-8 570 298)\">death to life</text></g><g class=\"ly\" data-s=\"9\" data-k=\"C\" style=\"--o:12\"><g class=\"mk\"><circle cx=\"560\" cy=\"342\" r=\"11\"/><text x=\"560\" y=\"346.5\" text-anchor=\"middle\">C</text></g><text class=\"hw sm\" x=\"576\" y=\"360\" transform=\"rotate(-8 576 360)\">John 6:47</text><text class=\"hw sm\" x=\"580\" y=\"384\" transform=\"rotate(-8 580 384)\">Assurance of</text><text class=\"hw sm\" x=\"586\" y=\"408\" transform=\"rotate(-8 586 408)\">Salvation</text></g></g></svg>";
+/* God's Story content — wording from "God's Story: A Gospel-Sharing Tool" (Union Church of Manila).
+   [[Ref]] = tappable verse reference, {{…}} = quoted Scripture, **…** = emphasis, __…__ = underline. */
+var STEPS=[
+ {n:1,t:'We matter to God',c:'#f18000',cue:'We matter to God. He made us, and he wants to have a relationship with us.',items:[
+  ['A','say','**We matter to God.** He made us, and He wants to have a relationship with us.'],
+  ['B','draw','Write “Us” on the left side of the paper and “God” on the right side.']]},
+ {n:2,t:'We have rebelled',c:'#c0392b',cue:'But all have sinned. Our sins have separated us from God.',ref:'Romans 3:23',items:[
+  ['A','say','**However,** we have rebelled against God and disobeyed Him. [[Romans 3:23]] says, {{“for all have sinned and fall short of the glory of God.”}} Our sins have separated us from God and broken off the relationship.'],
+  ['B','draw','Write Romans 3:23 and “all have sinned” under Us.'],
+  ['C','draw','Draw lines by both “Us” and “God” in such a way that they form walls around a giant chasm, separating us from God.']]},
+ {n:3,t:'Sin must be penalized',c:'#962330',cue:'Sin’s penalty is death: separation from God for eternity.',ref:'Romans 6:23',items:[
+  ['A','say','**Furthermore,** the sins we have committed must be penalized. The penalty owed is death. [[Romans 6:23]] says, {{“For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.”}}'],
+  ['B','draw','Write Romans 6:23 and “sin’s penalty is death.”'],
+  ['C','say','Death in the Bible means physical and spiritual death, which means separation from God for eternity in Hell.'],
+  ['D','draw','Write “Hell” at the bottom of the chasm. Draw a line from “sin’s penalty is death” to “Hell.”']]},
+ {n:4,t:'We can’t earn our way back',c:'#6b6c72',cue:'Our good works can never reach God. We are saved by grace, not by works.',ref:'Ephesians 2:8-9',items:[
+  ['A','say','**To varying degrees,** most of us are aware of our distance from God, so we start doing all kinds of things, like being charitable, going to church, and making sacrifices to get back to God. These are commendable things, but the Bible clarifies that none can earn us God’s forgiveness or re-establish our relationship with Him. [[Ephesians 2:8-9]] says, {{“For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast.”}}'],
+  ['B','draw','Draw an arrow going over the “Us” cliff. This signifies our attempts to reach God that always fall short. Write “Ephesians 2:8-9” and “not by works.”']]},
+ {n:5,t:'Jesus is the bridge',c:'#2b3d6b',cue:'God built the bridge. Jesus died for us, and he is the only way.',ref:'1 Peter 3:18',items:[
+  ['A','say','**It looks pretty hopeless,** but the good news is that we matter to God. In fact, God loves us so much that he did for us what we can never do for ourselves. He provided a “bridge” over which we can find His forgiveness and restore our relationship with Him.'],
+  ['B','draw','Draw a cross so that it touches both sides of the chasm.'],
+  ['C','say','He built it by coming to earth as one of us and dying on the cross to pay the death penalty we owed. [[1 Peter 3:18]] says, {{“For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to death in the flesh but made alive in the spirit.”}}'],
+  ['D','draw','Write “1 Peter 3:18 – Jesus is the Bridge” directly under the cross, and write “Jesus Christ” on the cross.'],
+  ['E','say','The Bible also clearly says that Jesus is the ONLY bridge back to God. In [[John 14:6]], {{Jesus said, “I am the way, and the truth, and the life. No one comes to the Father except through me.”}}'],
+  ['F','draw','Write below 1 Peter 3:18, “John 14:6 – Jesus is the ONLY Way.”']]},
+ {n:6,t:'Believe and receive',c:'#4d6393',cue:'We have to act on it: believe in Jesus and receive him.',ref:'John 3:16',items:[
+  ['A','say','**This is a picture of what the central message of the Bible is all about,** conceptually what God wants us to understand. God wants us to move over to the other side. But we need more than just to know about this or agree with it. We have to act on it. [[John 3:16]] says, {{“For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.”}}'],
+  ['B','draw','Write “John 3:16 – Believe” on top of the cross, left side.'],
+  ['C','say','[[John 1:12]] says, {{“But to all who did receive him, who believed in his name, he gave the right to become children of God.”}}'],
+  ['D','draw','Write “John 1:12 – Receive” on top of the cross, right side.'],
+  ['E','say','Believing and Receiving means __trusting Jesus Christ alone for your Salvation.__ It means __asking Jesus Christ to come in to forgive us and to take control of our lives.__']]},
+ {n:7,t:'Three promises',c:'#5f7803',cue:'Whoever believes has eternal life, does not come into judgment, and has passed from death to life.',ref:'John 5:24',items:[
+  ['A','say','**When we transfer to Jesus alone our complete trust,** He promises to do these three things for us: [[John 5:24]] says, {{“Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life.”}}'],
+  ['B','draw','Write on the side of God “John 5:24: a. has eternal life; b. does not come into judgement; c. has passed from death to life.”']]},
+ {n:8,t:'Invite a response',c:'#7a9a2e',cue:'Does this make sense to you? Would you like to move over the bridge today?',special:'invite'},
+ {n:9,t:'Assurance',c:'#e07a00',cue:'Whoever believes has eternal life. Jesus is speaking, and he won’t lie to you.',ref:'John 6:47',items:[
+  ['A','say','*After the prayer…* **Congratulations!** Now you’re a child of God and assured of eternal life. When doubts creep in, always remember this promise in [[John 6:47]]: {{“Truly, truly, I say to you, whoever believes has eternal life.”}}'],
+  ['B','say','Who is speaking here? Jesus. He is God, and He’s the one who died for you so that you will have eternal life. He won’t lie to you.'],
+  ['C','draw','Write “John 6:47 – Assurance of Salvation” on the side of God under John 5:24.']]}
+];
+var PRAYER=[['Lord, I know I am a sinner.','Confess'],['But I believe that Jesus died on the cross for my sin.','Believe'],['I now put my trust in Jesus Christ alone for my salvation.','Transfer Trust'],['I ask you to come into my life right now, forgive me, and give me eternal life.','Receive'],['Please take control of my life and help me be the person you want me to be.','Repent']];
+var REVIEW=['Do you know that you are a sinner?','Do you know that your sin separates you from God?','Do you believe Jesus paid for our sins in full on the Cross?','Do you now want to turn from your sin and trust in Jesus to save you?'];
+var VERSE_ORDER=[['Romans 3:23',2],['Romans 6:23',3],['Ephesians 2:8-9',4],['1 Peter 3:18',5],['John 14:6',5],['John 3:16',6],['John 1:12',6],['John 5:24',7],['John 6:47',9],['Romans 10:14',0]];
+
+(function(){
+'use strict';
+var SITE_URL='https://agtarapcreative.com/ucm/gods-story/';
+var PDF={file:'pdf/Gods-Story-A-Gospel-Sharing-Tool.pdf',name:'God’s Story – A Gospel-Sharing Tool.pdf'};
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+
+/* ---------- storage (this device only) ---------- */
+var KEY='gs-data',D={};
+try{D=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){D={}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(D))}catch(e){}}
+D.done=D.done||[];D.prefs=D.prefs||{};D.checks=D.checks||{};
+
+/* ---------- icons ---------- */
+var I={
+ home:'<path d="M3.6 11.2 12 4l8.4 7.2"/><path d="M5.8 9.4V19.6c0 .6.4 1 1 1h3.4v-5.5h3.6v5.5h3.4c.6 0 1-.4 1-1V9.4"/>',
+ steps:'<path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1.4"/><circle cx="4.5" cy="12" r="1.4"/><circle cx="4.5" cy="18" r="1.4"/>',
+ share:'<path d="M3.5 19.5c2.5-.3 4.8-1.2 6.6-3.2l8.6-9.3a2.1 2.1 0 0 0-3-3L7 12.7c-1.8 2-2.6 4.3-3 6.8z"/><path d="M14 5.8l3 3"/>',
+ verses:'<path d="M12 6.9C9.9 5.4 7 4.9 3.3 5.3v12.9c3.7-.4 6.6.1 8.7 1.6 2.1-1.5 5-2 8.7-1.6V5.3C17 4.9 14.1 5.4 12 6.9z"/><path d="M12 6.9v12.9"/>',
+ settings:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>',
+ say:'<path d="M4 5.5h16v10H9.5L5 19.5v-4H4z"/>',
+ pen:'<path d="M3.5 19.5c2.5-.3 4.8-1.2 6.6-3.2l8.6-9.3a2.1 2.1 0 0 0-3-3L7 12.7c-1.8 2-2.6 4.3-3 6.8z"/>',
+ ck:'<path d="M5 12.5l4.5 4.5L19 7.5"/>',chevL:'<path d="M15 5l-7 7 7 7"/>',chevR:'<path d="M9 5l7 7-7 7"/>',x:'<path d="M6 6l12 12M18 6L6 18"/>',
+ play:'<path d="M7 4.5v15l12-7.5z" fill="currentColor"/>',pause:'<path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/>',
+ replay:'<path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/>',link:'<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>',
+ dl:'<path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>',lock:'<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+ moon:'<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/>'
+};
+function ic(k,cls){return '<svg class="'+(cls||'')+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+I[k]+'</svg>'}
+
+/* ---------- text markup ---------- */
+function fmt(s){
+  s=esc(s);
+  s=s.replace(/\[\[(.+?)\]\]/g,function(m,r){return '<button type="button" class="ref" data-ref="'+r+'">'+r+'</button>'});
+  s=s.replace(/\{\{(.+?)\}\}/g,'<span class="vq">$1</span>');
+  s=s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/__(.+?)__/g,'<u>$1</u>').replace(/\*(.+?)\*/g,'<em>$1</em>');
+  return s;
+}
+
+/* ---------- the drawing ---------- */
+var nB=0;
+function bridge(cls){nB++;var w=el('div');w.innerHTML=BRIDGE.replace(/__ID__/g,'b'+nB);var s=w.firstChild;if(cls)s.classList.add.apply(s.classList,cls.split(' '));return s}
+var animOn=function(){return D.prefs.anim!==false&&!matchMedia('(prefers-reduced-motion: reduce)').matches};
+/* show layers up to step n; layers of step n are "new" (orange) and draw themselves */
+function paint(svg,n,opts){
+  opts=opts||{};var i=0,layers=$$('.ly',svg);
+  layers.forEach(function(g){g.classList.remove('go','new','vis');g.style.removeProperty('--dl')});
+  void svg.getBoundingClientRect();
+  layers.forEach(function(g){var s=+g.dataset.s;g.classList.add('vis');$$('.ln',g).forEach(function(p){if(!p.style.getPropertyValue('--len')){try{p.style.setProperty('--len',Math.ceil(p.getTotalLength()+2))}catch(e){}}});g.classList.remove('vis');
+    if(opts.all){g.classList.add('vis');if(animOn()&&opts.animate){g.classList.add('go');g.style.setProperty('--dl',(i*0.42+0.2).toFixed(2)+'s');i++}return}
+    if(s<n||(n===8&&s<=7)){g.classList.add('vis')}
+    else if(s===n){g.classList.add('vis','new');if(animOn()&&opts.animate!==false){g.classList.add('go');g.style.setProperty('--dl',(i*0.8+0.25).toFixed(2)+'s');i++}}
+  });
+  svg.classList.toggle('marks',!!opts.marks&&D.prefs.marks!==false);
+}
+
+/* ---------- build views ---------- */
+var main=$('#main');
+// home: step cards + hero drawing
+var grid=$('#stepsGrid');
+STEPS.forEach(function(st){var a=el('a','scard');a.href='#step-'+st.n;a.style.setProperty('--c',st.c);a.dataset.n=st.n;
+  a.innerHTML='<span class="ball">'+st.n+'</span><span><small>Step '+st.n+'</small><b>'+esc(st.t)+'</b></span>'+ic('ck','ck');grid.appendChild(a)});
+var heroSvg=bridge();$('#heroStage').insertBefore(heroSvg,$('#heroStage').firstChild);
+// steps
+STEPS.forEach(function(st,ix){
+  var v=el('section','view step');v.id='step-'+st.n;v.dataset.title='Step '+st.n;v.style.setProperty('--c',st.c);
+  var h='<div class="band"><div class="wrap"><div class="num">'+st.n+'</div><p class="eb">Step '+st.n+' of 9</p><h2>'+esc(st.t)+'</h2><p class="cue">'+esc(st.cue)+'</p>'+
+    '<div class="row"><button class="pill" type="button" data-present="'+st.n+'">'+ic('share')+'Share mode</button><button class="pill" type="button" data-copy="'+st.n+'">'+ic('link')+'Copy link</button></div></div></div>'+
+    '<div class="wrap sbody"><div class="sgrid"><div class="seq">';
+  if(st.special==='invite')h+=inviteHTML();
+  else st.items.forEach(function(it){var say=it[1]==='say';
+    h+='<div class="item '+it[1]+'"><span class="lt">'+it[0]+'</span><div><p class="kind">'+ic(say?'say':'pen')+(say?'Say':'Draw')+'</p><p>'+fmt(it[2])+'</p></div></div>'});
+  h+='</div><div class="stage"><button class="ibtn replay" type="button" aria-label="Replay the drawing">'+ic('replay')+'</button></div></div>'+
+    '<div class="practiced"><button class="donebtn" type="button" data-done="'+st.n+'" aria-pressed="false">'+ic('ck')+'<span>Mark as practiced</span></button></div>'+
+    '<nav class="pager" aria-label="Steps">'+
+    (ix>0?'<a class="pv" href="#step-'+(st.n-1)+'"><small>Previous</small><b>'+esc(STEPS[ix-1].t)+'</b></a>':'<a class="pv" href="#home"><small>Back to</small><b>Overview</b></a>')+
+    (ix<8?'<a class="nx" href="#step-'+(st.n+1)+'"><small>Next · Step '+(st.n+1)+'</small><b>'+esc(STEPS[ix+1].t)+'</b></a>':'<a class="nx" href="#verses"><small>Next</small><b>Memory verses</b></a>')+
+    '</nav></div>';
+  v.innerHTML=h;var stg=$('.stage',v);stg.insertBefore(bridge(),stg.firstChild);
+  main.insertBefore(v,$('#verses'));
+});
+function inviteHTML(){
+  var p=PRAYER.map(function(x){return '<li><span>“'+esc(x[0])+'”</span><span class="tag">'+esc(x[1])+'</span></li>'}).join('');
+  var r=REVIEW.map(function(q,i){return '<li><label><input type="checkbox" data-chk="'+i+'"><span>“'+esc(q)+'”</span></label></li>'}).join('');
+  return '<div class="item say"><span class="lt">1</span><div><p class="qhead">Clarification question</p><p class="big-q">Does this make sense to you?</p></div></div>'+
+  '<div class="item say"><span class="lt">2</span><div><p class="qhead">Share your story</p><p>You know, I was <input class="age" id="age" inputmode="numeric" maxlength="3" placeholder="age" aria-label="Your age when you decided"> when I came to this decision in my life. I knew I was a sinner and needed a Savior. I learned that Jesus had paid for my sins on the cross. It was then that I prayed a prayer like this. I told the Lord:</p><ul class="prayer">'+p+'</ul></div></div>'+
+  '<div class="item say"><span class="lt">3</span><div><p class="qhead">Application question</p><p class="big-q">Would you like to ‘move over the bridge’ today by trusting Jesus Christ for your salvation?</p><p class="note">Wait for the answer.</p><p>We can tell the Lord that by praying a prayer as I did.</p></div></div>'+
+  '<div class="item say"><span class="lt">4</span><div><p class="qhead">Review key truths</p><p>First, let’s clarify what this means:</p><ul class="checks">'+r+'</ul></div></div>'+
+  '<div class="item say"><span class="lt">5</span><div><p class="qhead">Decision question</p><p class="big-q">Would you like to pray right now?</p><p class="note">If they are ready…</p><p>I can lead us in prayer. Follow after me… <span class="note">(See the prayer above.)</span></p></div></div>';
+}
+// verses
+var vl=$('#vlist');
+VERSE_ORDER.forEach(function(v){var r=v[0],t=SCRIPTURE[r]||'';var c=el('article','vcard');c.dataset.ref=r;
+  var words=t.replace(/\[(\d+)\]\s*/g,'\u0001$1\u0002').split(/(\s+)/).map(function(w){if(/^\s+$/.test(w))return w;return w.replace(/\u0001(\d+)\u0002/g,'<sup>$1</sup>').replace(/^([^<]+)$/,'<span class="w">$1</span>').replace(/(<\/sup>)([^<\s]+)/,'$1<span class="w">$2</span>')}).join('');
+  c.innerHTML='<header><h3>'+esc(r)+'</h3><button class="play" type="button" data-play="'+esc(r)+'">'+ic('play')+'<span>Listen</span></button></header>'+
+    '<p class="from">'+(v[1]?'Step '+v[1]+' · '+esc(STEPS[v[1]-1].t):'Why we share')+'</p><p class="txt">'+words+'</p>';
+  vl.appendChild(c)});
+
+/* ---------- router ---------- */
+var cur=null,views=$$('.view');views=$$('.view');
+function route(){
+  var h=(location.hash||'#home').slice(1);if(h==='top'||h==='')h='home';
+  var v=document.getElementById(h);if(!v||!v.classList.contains('view'))v=document.getElementById('home');
+  if(cur===v)return;
+  $$('.view').forEach(function(x){x.classList.toggle('on',x===v)});cur=v;
+  var isStep=v.classList.contains('step');document.body.classList.toggle('in-step',isStep);
+  $('#btitle').textContent=v.dataset.title||'';
+  window.scrollTo(0,0);
+  if(isStep){var n=+v.id.split('-')[1];paint($('.bridge',v),n,{marks:true});D.last=n;save();
+    document.title='Step '+n+': '+STEPS[n-1].t+' · God’s Story'}
+  else{document.title='God’s Story: A Gospel-Sharing Tool'}
+  if(v.id==='home')paint(heroSvg,9,{all:true,animate:!homeShown});homeShown=true;
+  updateCTA();tabState();markSidebar();
+}
+var homeShown=false;
+window.addEventListener('hashchange',route);
+document.addEventListener('click',function(e){var b=e.target.closest('.replay');if(!b)return;var s=$('.bridge',b.closest('.stage'));
+  if(b.closest('#heroStage'))paint(s,9,{all:true,animate:true});else paint(s,+cur.id.split('-')[1],{marks:true})});
+$('#back').addEventListener('click',function(){location.hash='#home'});
+
+/* ---------- progress ---------- */
+function marks(){
+  $$('.scard').forEach(function(a){a.classList.toggle('done',D.done.indexOf(+a.dataset.n)>-1)});
+  $$('[data-done]').forEach(function(b){var on=D.done.indexOf(+b.dataset.done)>-1;b.setAttribute('aria-pressed',on);$('span',b).textContent=on?'Practiced':'Mark as practiced'});
+  $$('.sidebar a[data-n]').forEach(function(a){a.classList.toggle('done',D.done.indexOf(+a.dataset.n)>-1)});
+}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-done]');if(!b)return;var n=+b.dataset.done,i=D.done.indexOf(n);
+  if(i>-1)D.done.splice(i,1);else{D.done.push(n);toast(D.done.length===9?'All nine steps practiced. Well done!':'Step '+n+' marked as practiced')}save();marks()});
+function updateCTA(){var a=$('#ctaStart');var n=D.last&&D.last<9?D.last:0;
+  if(n&&D.done.length<9){a.href='#step-'+n;a.lastChild.textContent='Continue with Step '+n}else{a.href='#step-1';a.lastChild.textContent='Start with Step 1'}}
+
+/* ---------- step 8 inputs ---------- */
+var age=$('#age');if(age){age.value=D.age||'';age.addEventListener('input',function(){D.age=age.value.replace(/[^0-9]/g,'').slice(0,3);if(age.value!==D.age)age.value=D.age;save()})}
+$$('[data-chk]').forEach(function(c){c.checked=!!D.checks[c.dataset.chk];c.addEventListener('change',function(){D.checks[c.dataset.chk]=c.checked;save()})});
+
+/* ---------- toast ---------- */
+var tst=el('div','toast');tst.setAttribute('role','status');document.body.appendChild(tst);var tt;
+function toast(m){tst.textContent=m;tst.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){tst.classList.remove('on')},2200)}
+
+/* ---------- copy link ---------- */
+function copy(t){function ok(){toast('Link copied')}
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(ok,fb);else fb();
+  function fb(){var x=el('textarea');x.value=t;x.style.position='fixed';x.style.opacity='0';document.body.appendChild(x);x.select();try{document.execCommand('copy');ok()}catch(e){toast(t)}x.remove()}}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-copy]');if(b)copy(SITE_URL+'#step-'+b.dataset.copy)});
+
+/* ---------- sheets ---------- */
+var scrim=$('#scrim'),openSheet=null,lastFocus=null;
+function openS(s){if(openSheet&&openSheet!==s)closeS(openSheet,true);lastFocus=document.activeElement;s.hidden=false;void s.offsetWidth;s.classList.add('on');scrim.classList.add('on');openSheet=s;
+  main.inert=true;setTimeout(function(){var f=$('.x',s);if(f)f.focus({preventScroll:true})},60);tabState()}
+function closeS(s,keep){s=s||openSheet;if(!s)return;s.classList.remove('on');if(!keep)scrim.classList.remove('on');main.inert=false;stopAudio();
+  setTimeout(function(){if(!s.classList.contains('on'))s.hidden=true},400);if(openSheet===s)openSheet=null;tabState();
+  if(!keep&&lastFocus&&document.contains(lastFocus))try{lastFocus.focus({preventScroll:true})}catch(e){}}
+scrim.addEventListener('click',function(){closeS()});
+document.addEventListener('click',function(e){if(e.target.closest('.sheet .x'))closeS()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(pres.classList.contains('on'))closePresent();else if(openSheet)closeS()}});
+// swipe down to dismiss on phones
+$$('.sheet').forEach(function(s){var y0=null,dy=0;
+  s.addEventListener('touchstart',function(e){if(s.scrollTop>0)return;y0=e.touches[0].clientY;dy=0;s.style.transition='none'},{passive:true});
+  s.addEventListener('touchmove',function(e){if(y0==null)return;dy=Math.max(0,e.touches[0].clientY-y0);s.style.transform='translateY('+dy+'px)'},{passive:true});
+  s.addEventListener('touchend',function(){if(y0==null)return;s.style.transition='';s.style.transform='';if(dy>110)closeS(s);y0=null})});
+
+/* ---------- scripture reader + audio ---------- */
+var reader=$('#reader'),audio=new Audio(),playing=null;
+function verseHTML(t){return esc(t).replace(/\[(\d+)\]\s*/g,'<sup>$1</sup>')}
+function openRef(r){var t=SCRIPTURE[r];if(!t)return;$('#rdTitle').textContent=r;$('#rdText').innerHTML=verseHTML(t);
+  $('#rdLink').href='https://www.biblegateway.com/passage/?search='+encodeURIComponent(r)+'&version=ESV';
+  var p=$('#rdPlay');p.dataset.play=r;p.hidden=!AUDIO[r]&&!('speechSynthesis' in window);setPlay(p,false);openS(reader)}
+document.addEventListener('click',function(e){var b=e.target.closest('.ref');if(!b)return;e.preventDefault();openRef(b.dataset.ref)});
+function setPlay(b,on){b.classList.toggle('on',on);b.innerHTML=ic(on?'pause':'play')+'<span>'+(on?'Pause':'Listen')+'</span>'}
+function stopAudio(){try{audio.pause()}catch(e){}if(window.speechSynthesis)speechSynthesis.cancel();if(playing){setPlay(playing,false);playing=null}}
+audio.addEventListener('ended',stopAudio);
+document.addEventListener('click',function(e){var b=e.target.closest('[data-play]');if(!b)return;var r=b.dataset.play;
+  if(playing===b){stopAudio();return}stopAudio();playing=b;setPlay(b,true);
+  if(AUDIO[r]){audio.src=AUDIO[r];audio.play().catch(function(){speak(r,b)})}else speak(r,b)});
+function speak(r,b){if(!window.speechSynthesis){stopAudio();return}var u=new SpeechSynthesisUtterance(r+'. '+SCRIPTURE[r].replace(/\[\d+\]\s*/g,''));u.rate=.95;u.onend=stopAudio;speechSynthesis.speak(u)}
+
+/* ---------- verses: practice by hiding words ---------- */
+$$('#vmode button').forEach(function(b){b.addEventListener('click',function(){var hide=b.dataset.mode==='hide';
+  $$('#vmode button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+  $$('.vcard').forEach(function(c){c.classList.toggle('hide',hide);$$('.w.show',c).forEach(function(w){w.classList.remove('show')})})})});
+document.addEventListener('click',function(e){var w=e.target.closest('.vcard.hide .w');if(w)w.classList.add('show')});
+
+/* ---------- share mode (present the drawing to someone) ---------- */
+var pres=$('#present'),pSvg=bridge('present-b'),pn=0,wake=null;
+$('#pcanvas').appendChild(pSvg);
+var dots=$('#pdots');for(var k=1;k<=9;k++)dots.appendChild(el('i'));
+function pShow(n){pn=Math.max(0,Math.min(9,n));$('#pstart').hidden=pn>0;
+  paint(pSvg,pn,{marks:false});pSvg.style.visibility=pn?'visible':'hidden';
+  var st=STEPS[pn-1];$('#ptitle').innerHTML=pn?'Step '+pn+' of 9<b>'+esc(st.t)+'</b>':'Share mode<b>God’s Story</b>';
+  $('#pcue').innerHTML=pn?esc(st.cue)+(st.ref?' <button type="button" class="ref" data-ref="'+st.ref+'">'+st.ref+'</button>':''):'';
+  $$('i',dots).forEach(function(d,i){d.className=i+1===pn?'on':i+1<pn?'past':''});
+  $('#pprev').disabled=pn===0;$('#pnext').disabled=pn===9}
+function openPresent(n){pres.hidden=false;void pres.offsetWidth;pres.classList.add('on');document.body.style.overflow='hidden';pShow(n||0);
+  try{if(navigator.wakeLock)navigator.wakeLock.request('screen').then(function(w){wake=w},function(){})}catch(e){}
+  setTimeout(function(){$('#pnext').focus({preventScroll:true})},80)}
+function closePresent(){pres.classList.remove('on');document.body.style.overflow='';try{wake&&wake.release()}catch(e){}wake=null;setTimeout(function(){pres.hidden=true},320);tabState()}
+$('#pclose').addEventListener('click',closePresent);
+$('#pprev').addEventListener('click',function(){pShow(pn-1)});
+$('#pnext').addEventListener('click',function(){pShow(pn+1)});
+$('#pcanvas').addEventListener('click',function(e){if(e.target.closest('.ref'))return;var r=this.getBoundingClientRect();pShow(e.clientX<r.left+r.width*.3?pn-1:pn+1)});
+pres.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();pShow(pn+1)}else if(e.key==='ArrowLeft'){e.preventDefault();pShow(pn-1)}});
+(function(){var x0=null;pres.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  pres.addEventListener('touchend',function(e){if(x0==null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>60){pShow(pn+(dx<0?1:-1))}x0=null})})();
+document.addEventListener('click',function(e){var b=e.target.closest('[data-present]');if(b){e.preventDefault();openPresent(+b.dataset.present||0)}});
+
+/* ---------- settings ---------- */
+var settings=$('#settings');
+function applyPrefs(){var p=D.prefs,t=p.theme||'light',dark=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches);
+  document.documentElement.classList.toggle('dark',dark);
+  document.documentElement.classList.toggle('t1',p.size==='1');document.documentElement.classList.toggle('t2',p.size==='2');
+  $$('[data-pref]').forEach(function(g){var k=g.dataset.pref;$$('button',g).forEach(function(b){b.setAttribute('aria-pressed',b.dataset.v===String(p[k]||(k==='theme'?'light':'0')))})});
+  $('#swMarks').checked=p.marks!==false;$('#swAnim').checked=p.anim!==false;
+  var tb=$('#themeBtn');if(tb){tb.innerHTML=ic(dark?'sun':'moon');tb.setAttribute('aria-label',dark?'Switch to light appearance':'Switch to dark appearance')}
+  try{localStorage.setItem('gs-theme',t)}catch(e){}
+  var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=dark?'#000000':'#f5f5f7'}
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',applyPrefs);
+$$('[data-pref] button').forEach(function(b){b.addEventListener('click',function(){D.prefs[b.parentNode.dataset.pref]=b.dataset.v;save();applyPrefs()})});
+$('#swMarks').addEventListener('change',function(){D.prefs.marks=this.checked;save();if(cur&&cur.classList.contains('step'))paint($('.bridge',cur),+cur.id.split('-')[1],{marks:true,animate:false})});
+$('#swAnim').addEventListener('change',function(){D.prefs.anim=this.checked;save()});
+$('#themeBtn').addEventListener('click',function(){D.prefs.theme=document.documentElement.classList.contains('dark')?'light':'dark';save();applyPrefs()});
+$('#erase').addEventListener('click',function(){if(this.dataset.arm){D={done:[],prefs:D.prefs,checks:{}};save();marks();updateCTA();if(age)age.value='';$$('[data-chk]').forEach(function(c){c.checked=false});this.textContent='Erase my progress';delete this.dataset.arm;toast('Your progress was erased');return}
+  this.dataset.arm=1;this.textContent='Tap again to erase';var me=this;setTimeout(function(){if(me.dataset.arm){delete me.dataset.arm;me.textContent='Erase my progress'}},3500)});
+document.addEventListener('click',function(e){var b=e.target.closest('[data-go]');if(!b)return;closeS();location.hash=b.dataset.go});
+$$('[data-pdf]').forEach(function(a){a.href=PDF.file;a.setAttribute('download',PDF.name);a.target='_blank';a.rel='noopener'});
+/* inside claude.ai the viewer must confirm downloads; on your own server the link just works */
+var DL=null;if(window.claude&&window.claude.use)window.claude.use('downloads').then(function(d){DL=d});
+document.addEventListener('click',function(e){var a=e.target.closest('[data-pdf]');if(!a||!DL)return;e.preventDefault();
+  fetch(PDF.file).then(function(r){if(!r.ok)throw 0;return r.blob()}).then(function(b){return DL.save({filename:PDF.name.replace('’',''),data:b})})
+  .catch(function(err){var c=err&&err.code;if(c==='declined')return;toast(c==='rate_limited'?'A save is already open. Try again in a moment.':'The PDF can’t be saved in this view.')})});
+
+/* ---------- tab bar ---------- */
+var tb=el('nav','tabbar');tb.setAttribute('aria-label','Main');
+var TABS=[['home','Home'],['steps','Steps'],['share','Share'],['verses','Verses'],['settings','Settings']];
+tb.innerHTML='<span class="tabpill" aria-hidden="true"></span>'+TABS.map(function(t){return '<button type="button" data-tab="'+t[0]+'">'+ic(t[0])+'<span>'+t[1]+'</span></button>'}).join('');
+document.body.appendChild(tb);
+function tabState(){var a=openSheet===settings?'settings':pres.classList.contains('on')?'share':!cur?'home':cur.classList.contains('step')?'steps':cur.id==='verses'?'verses':cur.id==='about'?'settings':'home';
+  var bs=$$('[data-tab]',tb),i=0;bs.forEach(function(b,j){var on=b.dataset.tab===a;b.classList.toggle('on',on);if(on){b.setAttribute('aria-current','page');i=j}else b.removeAttribute('aria-current')});tb.style.setProperty('--i',i)}
+tb.addEventListener('click',function(e){var b=e.target.closest('[data-tab]');if(!b)return;
+  if(tb.classList.contains('mini')){tb.classList.remove('mini');return}
+  var k=b.dataset.tab;if(openSheet&&k!=='settings')closeS();
+  if(k==='home')location.hash='#home';
+  else if(k==='steps'){location.hash='#step-'+(D.last||1)}
+  else if(k==='share')openPresent(0);
+  else if(k==='verses')location.hash='#verses';
+  else openS(settings);tabState()});
+(function(){var lastY=scrollY,acc=0;function mini(on){tb.classList.toggle('mini',on)}
+  addEventListener('scroll',function(){var y=scrollY,dy=y-lastY;lastY=y;if(openSheet)return;acc=(dy>0)===(acc>0)?acc+dy:dy;
+    if(y<80)mini(false);else if(acc>24)mini(true);else if(acc<-18)mini(false)},{passive:true});
+  window.addEventListener('hashchange',function(){mini(false)})})();
+$('#settingsBtn').addEventListener('click',function(){openS(settings)});
+
+/* ---------- sidebar ---------- */
+var sb=$('#sidebar');
+$('#sbSteps').innerHTML=STEPS.map(function(s){return '<a href="#step-'+s.n+'" data-n="'+s.n+'" data-sv="step-'+s.n+'" style="--c:'+s.c+'"><span class="d">'+s.n+'</span>'+esc(s.t)+ic('ck','ck')+'</a>'}).join('');
+function markSidebar(){if(!cur)return;$$('[data-sv]',sb).forEach(function(a){a.classList.toggle('cur',a.dataset.sv===cur.id)})}
+sb.addEventListener('click',function(e){var b=e.target.closest('[data-sbx]');if(!b)return;var k=b.dataset.sbx;if(k==='share')openPresent(0);else if(k==='settings')openS(settings)});
+
+/* ---------- logomarks ---------- */
+var sy=document.getElementById('ucmmark');$$('svg.bmark').forEach(function(m){if(sy&&!m.querySelector('path'))m.innerHTML=sy.innerHTML});
+
+/* ---------- keyboard ---------- */
+document.addEventListener('keydown',function(e){if(e.target.closest('input,textarea')||openSheet||pres.classList.contains('on')||e.metaKey||e.ctrlKey||e.altKey)return;
+  if(!cur||!cur.classList.contains('step'))return;var n=+cur.id.split('-')[1];
+  if(e.key==='ArrowRight'&&n<9)location.hash='#step-'+(n+1);else if(e.key==='ArrowLeft'&&n>1)location.hash='#step-'+(n-1)});
+
+applyPrefs();marks();route();
+})();
+
+</script>
+<script>if("serviceWorker" in navigator&&location.protocol==="https:")navigator.serviceWorker.register("sw.js");</script></body></html>
