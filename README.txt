@@ -11,4 +11,4 @@ icons/                 App icon, browser icon and iPhone/iPad launch screens
 manifest.webmanifest   Lets phones install the app
 sw.js                  Lets the app open offline after the first visit (works on https only)
 
-The “Copy link” buttons point to https://agtarapcreative.com/ucm/gods-story/. If you upload it somewhere else, change SITE_URL near the top of the app script in index.html.
+The “Copy link” buttons use whatever web address the app is opened from, so it works on any domain without changes.

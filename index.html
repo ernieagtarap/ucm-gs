@@ -510,7 +510,8 @@ var VERSE_ORDER=[['Romans 3:23',2],['Romans 6:23',3],['Ephesians 2:8-9',4],['1 P
 
 (function(){
 'use strict';
-var SITE_URL='https://agtarapcreative.com/ucm/gods-story/';
+// Share links use whatever address the app is running from; this fallback is for previews and offline copies.
+var SITE_URL=(function(fb){try{var l=location;if(/^https?:$/.test(l.protocol)&&!/(^|\.)(claude\.ai|claudeusercontent\.com|claude\.site|localhost)$|^127\./.test(l.hostname))return l.origin+l.pathname.replace(/index\.html$/,'')}catch(e){}return fb})('https://ucm-gs.vercel.app/');
 var PDF={file:'pdf/Gods-Story-A-Gospel-Sharing-Tool.pdf',name:'God’s Story – A Gospel-Sharing Tool.pdf'};
 var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
 function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
